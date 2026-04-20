@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research Highlights",
+    "section": "",
+    "text": "Memristive system-on-a-Chip (SoC) \n\n\n\n\n\n\n\n CMOS-based cellular neural network \n\n\n\n\n\n\n\n Neuromorphic sensing system\n\n\n\n\n\n\n\n Memristor-based AI accelerator"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "All types Journal Conference   All years   Default order First-author first \n\n\n\n[1] V. Ravichandran, Y. Huang, B. Flannery, T. Molom-Ochir, T. Maurer, S. Asapu, A. Abdel-Maksoud, N. Heermance, R. Yoo, J. Tackie, W. Zhao, Y. Ling, A. Guo, J. J. Yang, and Q. Xia, “Memristive cellular neural networks for fast in-pixel computing,” Nature Electronics, vol. 9, pp. 189–199, Jan. 2026, doi: 10.1038/s41928-025-01555-3\n\n\n[2] W. Zhao, Y. Huang, A. Tewari, A. J. Rad, A. Zhang, N. Ge, J. J. Yang, M. Hu, S. Majumdar, and Q. Xia, “Event-based neuromorphic sensing system with flexible haptic sensors and a memristive system on a chip,” Nature Sensors, vol. 1, pp. 163–171, Jan. 2026, doi: 10.1038/s44460-025-00013-z\n\n\n[3] Y. Huang, C. He, Y. Ling, N. Ge, J. J. Yang, M. Hu, L. Katehi, and Q. Xia, “Radiofrequency signal processing with a memristive system-on-a-chip,” Nature Electronics, vol. 8, pp. 587–596, July 2025, doi: 10.1038/s41928-025-01409-y\n\n\n[4] N. Jiang, M. Jiang, H. Huang, L. Yang, Y. Huang, and Z. Zeng, “A parallel read-write circuit with fast amplitude-adaptive matching scheme to memristor crossbar array,” IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 72, pp. 5898–5911, Oct. 2025, doi: 10.1109/TCSI.2025.3544554\n\n\n[5] Y. Huang, T. Ando, A. Sebastian, M.-F. Chang, J. J. Yang, and Q. Xia, “Memristor-based hardware accelerators for artificial intelligence,” Nature Reviews Electrical Engineering, vol. 1, pp. 286–299, Apr. 2024, doi: 10.1038/s44287-024-00037-6\n\n\n[6] F. Nowshin, Y. Huang, Md. R. Sarkar, Q. Xia, and Y. Yi, “MERRC: A memristor-enabled reconfigurable low-power reservoir computing architecture at the edge,” IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 71, pp. 174–186, Jan. 2024, doi: 10.1109/TCSI.2023.3329337\n\n\n[7] Y. Huang, A. J. Rad, and Q. Xia, “Hardware-algorithm co-design for hyperdimensional computing based on memristive system-on-chip,” in NeurIPS 2024 workshop on machine learning with new compute paradigms, 2024, \n\n\n[8] Y. Huang, F. Kiani, F. Ye, and Q. Xia, “From memristive devices to neuromorphic systems,” Applied Physics Letters, vol. 122, pp. 110501, Mar. 2023, doi: 10.1063/5.0133044\n\n\n[9] Y. Huang, V. Ravichandran, W. Zhao, and Q. Xia, “Towards energy-efficient computing hardware based on memristive nanodevices,” IEEE Nanotechnology Magazine, vol. 17, pp. 30–38, Oct. 2023, doi: 10.1109/MNANO.2023.3297106\n\n\n[10] F. Ye, F. Kiani, Y. Huang, and Q. Xia, “Diffusive memristors with uniform and tunable relaxation time for spike generation in event‐based pattern recognition,” Advanced Materials, vol. 35, pp. 2204778, Sept. 2023, doi: 10.1002/adma.202204778\n\n\n[11] X. Liu, Y. Huang, Z. Zeng, and D. C. Wunsch, “Memristor-based HTM spatial pooler with on-device learning for pattern recognition,” IEEE Transactions on Systems, Man, and Cybernetics: Systems, vol. 52, pp. 1901–1915, Mar. 2022, doi: 10.1109/TSMC.2020.3035612\n\n\n[12] L. Yang, Z. Zeng, and Y. Huang, “An associative-memory-based reconfigurable memristive neuromorphic system with synchronous weight training,” IEEE Transactions on Cognitive and Developmental Systems, vol. 12, pp. 529–540, Sept. 2020, doi: 10.1109/TCDS.2019.2932179\n\n\n[13] X. Shi, Z. Zeng, L. L. Yang, and Y. Huang, “Memristor-based circuit design for neuron with homeostatic plasticity,” IEEE Transactions on Emerging Topics in Computational Intelligence, vol. 2, pp. 359–370, Oct. 2018, doi: 10.1109/TETCI.2018.2829914\n\n\n[14] L. Yang, Z. Zeng, Y. Huang, and S. Wen, “Memristor-based circuit implementations of recognition network and recall network with forgetting stages,” IEEE Transactions on Cognitive and Developmental Systems, vol. 10, pp. 1133–1142, Dec. 2018, doi: 10.1109/TCDS.2018.2859303\n\n\n[15] Y. Huang, R. Hu, and Z. Zeng, “Three-dimensional memristor-based crossbar architecture for capsule network implementation,” in 2018 eighth international conference on information science and technology (ICIST), pp. 170–175, June 2018, doi: 10.1109/ICIST.2018.8426119"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "2026.01: Our paper “Memristive cellular neural networks for fast in-pixel computing” is published in Nature Electronics. Link to the paper: Ravichandran et al., Nat. Electron. 9, (2026). See EurekAlert here, ScienMag news here, a Research Briefing here.\nA Nature Electronics Editorial piece that highlights our work: “Memristors march on”.\n2026.01: Our paper “Event-based neuromorphic sensing system with flexible haptic sensors and a memristive system on a chip” is published in Nature Sensors. Link to the paper: Zhao et al., Nat. Sens. 1, 163–171 (2026). See TechXplore highlight here, News & Views here, and a ‘Behind the paper’ piece here.\n2025.08: I successfully defended my Ph.D. thesis.\n2025.07: Our paper “Radiofrequency signal processing with a memristive system-on-a-chip” is published in Nature Electronics as a cover article. Link to the paper: Huang et al., Nat. Electron. 8, 587–596 (2025). See the Nature Electronics cover feature here, UMass news here, TechXplore highlight here, and a ‘Behind the paper’ piece here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "Incoming Assistant Professor\nMin H. Kao Department of EECS\nTickle College of Engineering\nUniversity of Tennessee, Knoxville\n\nEmail: yihuang@utk.edu\nGoogle Scholar • ORCID • LinkedIn\n\n\n\n\n\n\n\nArtificial intelligence (AI) has become a part of everyday life, powering everything from voice assistants to medical diagnostics. But this progress comes at the cost of unsustainable scaling in data and energy consumption. A profound gap persists between AI and human intelligence, particularly in energy efficiency, where data centers behind AI consume as much electricity as small cities while the human brain operates on the energy of a single meal, and in cognitive capability, where AI requires massive datasets to learn tasks that humans can master from limited experience.\n\n\n\nOur research vision is to close this gap through a hardware-software co-design paradigm that spans multiple layers of Electrical Engineering and Computer Science (EECS) and draws inspiration from cognitive neuroscience. The ultimate goal is to approach the energy efficiency and cognitive capabilities of the human brain, enabling next-generation AI systems across a broad range of applications.\n\n […] […] […] […] […] […] […] […] […] […] […] […] […] […] […]\n\n\n\n\n\nBuilding on our prior work (see the figure above), we pursue this vision through a cross-layer co-design approach that spans devices, circuits, architectures, algorithms, and applications:\n\n\nWe model emerging memory devices, including non-volatile and volatile memristors, to establish the physical foundation for analog in-memory computing that exploits their rich analog dynamics.\n\n\n\nWe design analog and mixed-signal circuits that leverage these device-level dynamics to emulate the stochastic and temporal behavior of biological synapses and neurons.\n\n\n\nWe develop hierarchical, distributed architectures with efficient on-chip communication across analog and digital domains, enabling multilayer information processing and highly parallel computation.\n\n\n\nWe co-design neural network structures and on-chip learning algorithms optimized for brain-inspired hardware substrates, incorporating spike-based, event-driven, and analog features to enable real-time on-chip learning.\n\n\n\nWe integrate these energy-efficient, low-latency systems into sensors, wearables, and mobile devices to address a wide range of edge applications that require instantaneous intelligent decisions with minimal power."
+  },
+  {
+    "objectID": "index.html#research-vision",
+    "href": "index.html#research-vision",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "Artificial intelligence (AI) has become a part of everyday life, powering everything from voice assistants to medical diagnostics. But this progress comes at the cost of unsustainable scaling in data and energy consumption. A profound gap persists between AI and human intelligence, particularly in energy efficiency, where data centers behind AI consume as much electricity as small cities while the human brain operates on the energy of a single meal, and in cognitive capability, where AI requires massive datasets to learn tasks that humans can master from limited experience.\n\n\n\nOur research vision is to close this gap through a hardware-software co-design paradigm that spans multiple layers of Electrical Engineering and Computer Science (EECS) and draws inspiration from cognitive neuroscience. The ultimate goal is to approach the energy efficiency and cognitive capabilities of the human brain, enabling next-generation AI systems across a broad range of applications.\n\n […] […] […] […] […] […] […] […] […] […] […] […] […] […] […]\n\n\n\n\n\nBuilding on our prior work (see the figure above), we pursue this vision through a cross-layer co-design approach that spans devices, circuits, architectures, algorithms, and applications:\n\n\nWe model emerging memory devices, including non-volatile and volatile memristors, to establish the physical foundation for analog in-memory computing that exploits their rich analog dynamics.\n\n\n\nWe design analog and mixed-signal circuits that leverage these device-level dynamics to emulate the stochastic and temporal behavior of biological synapses and neurons.\n\n\n\nWe develop hierarchical, distributed architectures with efficient on-chip communication across analog and digital domains, enabling multilayer information processing and highly parallel computation.\n\n\n\nWe co-design neural network structures and on-chip learning algorithms optimized for brain-inspired hardware substrates, incorporating spike-based, event-driven, and analog features to enable real-time on-chip learning.\n\n\n\nWe integrate these energy-efficient, low-latency systems into sensors, wearables, and mobile devices to address a wide range of edge applications that require instantaneous intelligent decisions with minimal power."
+  },
+  {
+    "objectID": "hiring.html",
+    "href": "hiring.html",
+    "title": "Opportunities",
+    "section": "",
+    "text": "I am recruiting multiple PhD students to join my research group starting Fall 2026 or Spring 2027. We will explore hardware-software co-design for energy-efficient, intelligent computing systems powering next-generation AI, focusing on two complementary directions:\n\nBrain-inspired circuits and architectures based on CMOS and emerging memory devices\nEnergy-efficient algorithms and applications with analog in-memory computing hardware\n\n\n\n\n\nAs an early-career PI with expertise spanning both hardware and software, I provide hands-on guidance while encouraging ambitious research directions. I have experience guiding students toward publications in both engineering-focused venues (e.g., IEEE Transactions) and high-impact interdisciplinary journals (e.g., Nature series). Feel free to reach out to my collaborators to hear about their experience working with me.\n\n\n\nOur EECS department houses programs in Electrical Engineering, Computer Engineering, and Computer Science, creating collaboration opportunities across the full hardware-to-software stack. The department is also home to a leading research team (TENN Lab) in neuromorphic architectures, learning, and applications, a natural foundation for interdisciplinary work. We are also minutes from Oak Ridge National Laboratory, offering unique opportunities to collaborate with a world-class research facility.\n\n\n\nResearch is a marathon, not a sprint, and we believe in a balanced lifestyle. The Great Smoky Mountains National Park is right around the corner for hiking, camping, and outdoor adventures. I am also an ACE-certified personal trainer and fitness nutrition specialist and happy to share tips if you are into fitness.\n\n\n\n\nSelf-motivated students who love exploring what’s next. Ideal candidates have:\n\nAn interest in brain-inspired hardware and software for next-generation AI\nA strong background in analog circuit design or machine learning algorithm\nPrevious experience with neuromorphic computing, in-memory computing, or brain-inspired computing is a plus\n\n\n\n\nIf you are interested in working with me, please email me at yihuang@utk.edu with your: 1) CV, 2) transcripts, 3) a brief statement of your research interests and career goals, and 4) TOEFL or IELTS score (if applicable)."
+  },
+  {
+    "objectID": "hiring.html#prospective-phd-students",
+    "href": "hiring.html#prospective-phd-students",
+    "title": "Opportunities",
+    "section": "",
+    "text": "I am recruiting multiple PhD students to join my research group starting Fall 2026 or Spring 2027. We will explore hardware-software co-design for energy-efficient, intelligent computing systems powering next-generation AI, focusing on two complementary directions:\n\nBrain-inspired circuits and architectures based on CMOS and emerging memory devices\nEnergy-efficient algorithms and applications with analog in-memory computing hardware\n\n\n\n\n\nAs an early-career PI with expertise spanning both hardware and software, I provide hands-on guidance while encouraging ambitious research directions. I have experience guiding students toward publications in both engineering-focused venues (e.g., IEEE Transactions) and high-impact interdisciplinary journals (e.g., Nature series). Feel free to reach out to my collaborators to hear about their experience working with me.\n\n\n\nOur EECS department houses programs in Electrical Engineering, Computer Engineering, and Computer Science, creating collaboration opportunities across the full hardware-to-software stack. The department is also home to a leading research team (TENN Lab) in neuromorphic architectures, learning, and applications, a natural foundation for interdisciplinary work. We are also minutes from Oak Ridge National Laboratory, offering unique opportunities to collaborate with a world-class research facility.\n\n\n\nResearch is a marathon, not a sprint, and we believe in a balanced lifestyle. The Great Smoky Mountains National Park is right around the corner for hiking, camping, and outdoor adventures. I am also an ACE-certified personal trainer and fitness nutrition specialist and happy to share tips if you are into fitness.\n\n\n\n\nSelf-motivated students who love exploring what’s next. Ideal candidates have:\n\nAn interest in brain-inspired hardware and software for next-generation AI\nA strong background in analog circuit design or machine learning algorithm\nPrevious experience with neuromorphic computing, in-memory computing, or brain-inspired computing is a plus\n\n\n\n\nIf you are interested in working with me, please email me at yihuang@utk.edu with your: 1) CV, 2) transcripts, 3) a brief statement of your research interests and career goals, and 4) TOEFL or IELTS score (if applicable)."
+  },
+  {
+    "objectID": "cv.zh.html",
+    "href": "cv.zh.html",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "我将于 2026 年秋季加入田纳西大学诺克斯维尔分校 Min H. Kao 电气工程与计算机科学系，担任助理教授，并加入 Foundation Artificial Intelligence Cluster。我目前是麻省大学阿默斯特分校 电气与计算机工程系 的博士后研究助理，2025 年 9 月在 Qiangfei Xia 教授指导下获得博士学位，并与 Joshua J. Yang、Linda Katehi 教授及 TetraMem Inc. 紧密合作。我还在 华中科技大学 人工智能与自动化学院 获得学士与硕士学位，并师从 曾志刚 教授。更多信息详见我的 CV。"
+  },
+  {
+    "objectID": "cv.zh.html#关于",
+    "href": "cv.zh.html#关于",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "我将于 2026 年秋季加入田纳西大学诺克斯维尔分校 Min H. Kao 电气工程与计算机科学系，担任助理教授，并加入 Foundation Artificial Intelligence Cluster。我目前是麻省大学阿默斯特分校 电气与计算机工程系 的博士后研究助理，2025 年 9 月在 Qiangfei Xia 教授指导下获得博士学位，并与 Joshua J. Yang、Linda Katehi 教授及 TetraMem Inc. 紧密合作。我还在 华中科技大学 人工智能与自动化学院 获得学士与硕士学位，并师从 曾志刚 教授。更多信息详见我的 CV。"
+  },
+  {
+    "objectID": "cv.zh.html#任职经历",
+    "href": "cv.zh.html#任职经历",
+    "title": "Yi Huang",
+    "section": "任职经历",
+    "text": "任职经历\n\n2026 年 8 月起，田纳西大学诺克斯维尔分校 助理教授\n2025 年 9 月至今，麻省大学阿默斯特分校 博士后研究助理"
+  },
+  {
+    "objectID": "cv.zh.html#教育背景",
+    "href": "cv.zh.html#教育背景",
+    "title": "Yi Huang",
+    "section": "教育背景",
+    "text": "教育背景\n\n电气与计算机工程博士，麻省大学阿默斯特分校，2025\n控制科学与工程 / 系统工程 硕士 / 学士，华中科技大学，2019 / 2016"
+  },
+  {
+    "objectID": "cv.zh.html#荣誉与奖励",
+    "href": "cv.zh.html#荣誉与奖励",
+    "title": "Yi Huang",
+    "section": "荣誉与奖励",
+    "text": "荣誉与奖励\n\n麻省大学阿默斯特分校 ECE David H. Navon 奖学金，2022\n麻省大学阿默斯特分校 ECE Graduate Fellowship，2020"
+  },
+  {
+    "objectID": "cv.zh.html#期刊会议审稿",
+    "href": "cv.zh.html#期刊会议审稿",
+    "title": "Yi Huang",
+    "section": "期刊/会议审稿",
+    "text": "期刊/会议审稿\n\nScience Advances\nNature Communications\nIEEE Transactions on Cybernetics\nIEEE Transactions on Systems, Man and Cybernetics: Systems\nIEEE Transactions on Emerging Topics in Computational Intelligence\nIEEE Transactions on Circuits and Systems II: Express Briefs\nAdvanced Functional Materials\nKnowledge-Based Systems\nInformation Sciences\nNeural Networks\nCognitive Computation\nScientific Reports\n2026 IEEE International Symposium on Circuits and Systems"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "I will join the Min H. Kao Department of EECS at the University of Tennessee, Knoxville as an Assistant Professor in Fall 2026, where I will be part of the Foundation Artificial Intelligence Cluster. I am currently a Postdoctoral Research Associate in the Department of Electrical and Computer Engineering at the University of Massachusetts Amherst, where I received my Ph.D. in September 2025 under the supvision of Professor Qiangfei Xia and in close collaboration with Professor Joshua J. Yang, Professor Linda Katehi and TetraMem Inc.. I also hold both a B.E. and an M.S. from the School of Artificial Intelligence and Automation at Huazhong University of Science and Technology, where I worked with Professor Zhigang Zeng. Further details are available in my CV."
+  },
+  {
+    "objectID": "cv.html#about",
+    "href": "cv.html#about",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "I will join the Min H. Kao Department of EECS at the University of Tennessee, Knoxville as an Assistant Professor in Fall 2026, where I will be part of the Foundation Artificial Intelligence Cluster. I am currently a Postdoctoral Research Associate in the Department of Electrical and Computer Engineering at the University of Massachusetts Amherst, where I received my Ph.D. in September 2025 under the supvision of Professor Qiangfei Xia and in close collaboration with Professor Joshua J. Yang, Professor Linda Katehi and TetraMem Inc.. I also hold both a B.E. and an M.S. from the School of Artificial Intelligence and Automation at Huazhong University of Science and Technology, where I worked with Professor Zhigang Zeng. Further details are available in my CV."
+  },
+  {
+    "objectID": "cv.html#positions",
+    "href": "cv.html#positions",
+    "title": "Yi Huang",
+    "section": "Positions",
+    "text": "Positions\n\nStarting August 2026, Assistant Professor, University of Tennessee, Knoxville\nSeptember 2025 – present, Postdoctoral Research Associate, University of Massachusetts Amherst"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Yi Huang",
+    "section": "Education",
+    "text": "Education\n\nPhD in Electrical and Computer Engineering, University of Massachusetts Amherst, 2025\nMS / BE in Control Science and Engineering / System Engineering, Huazhong University of Science and Technology, 2019 / 2016"
+  },
+  {
+    "objectID": "cv.html#honors-and-awards",
+    "href": "cv.html#honors-and-awards",
+    "title": "Yi Huang",
+    "section": "Honors and Awards",
+    "text": "Honors and Awards\n\nECE David H. Navon Scholarship of University of Massachusetts Amherst, 2022\nECE Graduate Fellowship of University of Massachusetts Amherst,2020"
+  },
+  {
+    "objectID": "cv.html#journalconference-reviewer",
+    "href": "cv.html#journalconference-reviewer",
+    "title": "Yi Huang",
+    "section": "Journal/Conference Reviewer",
+    "text": "Journal/Conference Reviewer\n\nScience Advances\nNature Communications\nIEEE Transactions on Cybernetics\nIEEE Transactions on Systems, Man and Cybernetics: Systems\nIEEE Transactions on Emerging Topics in Computational Intelligence\nIEEE Transactions on Circuits and Systems II: Express Briefs\nAdvanced Functional Materials\nKnowledge-Based Systems\nInformation Sciences\nNeural Networks\nCognitive Computation\nScientific Reports\n2026 IEEE International Symposium on Circuits and Systems"
+  },
+  {
+    "objectID": "hiring.zh.html",
+    "href": "hiring.zh.html",
+    "title": "招生机会",
+    "section": "",
+    "text": "我正在招收多名博士生，计划于 2026 年秋季或 2027 年春季加入课题组。我们将围绕面向下一代 AI 的高能效智能计算系统，开展软硬件协同设计研究，重点聚焦两个互补方向：\n\n基于 CMOS 和新型存储器件的脑启发电路与架构设计\n基于模拟存内计算硬件的高能效算法与应用开发\n\n\n\n\n\n作为一名兼具硬件与软件背景的青年 PI，我会提供高参与度的科研指导，并鼓励学生探索有挑战性的研究方向。我有指导学生在工程领域期刊（如 IEEE Transactions）和高影响力跨学科期刊（如 Nature 系列）发表成果的经验。欢迎联系我的合作伙伴，了解与我合作的实际体验。\n\n\n\n我们 EECS 系涵盖电子工程、计算机工程和计算机科学三大方向，提供从硬件到软件全栈协作机会。系内还拥有神经形态架构、学习与应用方向的领先研究团队（TENN Lab），为跨学科研究提供了天然基础。我们距离 Oak Ridge National Laboratory 也仅几分钟路程，便于与世界一流研究机构开展合作。\n\n\n\n科研是一场马拉松，而不是短跑。我们重视平衡且可持续的生活方式。大雾山国家公园近在咫尺，适合徒步、露营和户外活动。我也拥有 ACE 认证私人教练和运动营养专家资质；如果你对健身感兴趣，我很乐意分享经验。\n\n\n\n\n积极主动、热爱探索前沿方向的学生。理想候选人通常具备：\n\n对面向下一代 AI 的脑启发软硬件研究有兴趣\n扎实的模拟电路设计或机器学习算法基础\n具有神经形态计算、存内计算或脑启发计算相关经验者优先\n\n\n\n\n如果你有意与我合作，请发送邮件至 yihuang@utk.edu，并附上以下材料：\n\nCV\n成绩单\n一份简短的研究兴趣与职业目标说明\nTOEFL 或 IELTS 成绩（如适用）"
+  },
+  {
+    "objectID": "hiring.zh.html#博士生招生",
+    "href": "hiring.zh.html#博士生招生",
+    "title": "招生机会",
+    "section": "",
+    "text": "我正在招收多名博士生，计划于 2026 年秋季或 2027 年春季加入课题组。我们将围绕面向下一代 AI 的高能效智能计算系统，开展软硬件协同设计研究，重点聚焦两个互补方向：\n\n基于 CMOS 和新型存储器件的脑启发电路与架构设计\n基于模拟存内计算硬件的高能效算法与应用开发\n\n\n\n\n\n作为一名兼具硬件与软件背景的青年 PI，我会提供高参与度的科研指导，并鼓励学生探索有挑战性的研究方向。我有指导学生在工程领域期刊（如 IEEE Transactions）和高影响力跨学科期刊（如 Nature 系列）发表成果的经验。欢迎联系我的合作伙伴，了解与我合作的实际体验。\n\n\n\n我们 EECS 系涵盖电子工程、计算机工程和计算机科学三大方向，提供从硬件到软件全栈协作机会。系内还拥有神经形态架构、学习与应用方向的领先研究团队（TENN Lab），为跨学科研究提供了天然基础。我们距离 Oak Ridge National Laboratory 也仅几分钟路程，便于与世界一流研究机构开展合作。\n\n\n\n科研是一场马拉松，而不是短跑。我们重视平衡且可持续的生活方式。大雾山国家公园近在咫尺，适合徒步、露营和户外活动。我也拥有 ACE 认证私人教练和运动营养专家资质；如果你对健身感兴趣，我很乐意分享经验。\n\n\n\n\n积极主动、热爱探索前沿方向的学生。理想候选人通常具备：\n\n对面向下一代 AI 的脑启发软硬件研究有兴趣\n扎实的模拟电路设计或机器学习算法基础\n具有神经形态计算、存内计算或脑启发计算相关经验者优先\n\n\n\n\n如果你有意与我合作，请发送邮件至 yihuang@utk.edu，并附上以下材料：\n\nCV\n成绩单\n一份简短的研究兴趣与职业目标说明\nTOEFL 或 IELTS 成绩（如适用）"
+  },
+  {
+    "objectID": "index.zh.html",
+    "href": "index.zh.html",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "即将入职助理教授\nMin H. Kao 电气工程与计算机科学系\nTickle 工程学院\n田纳西大学诺克斯维尔分校\n\n电子邮件: yihuang@utk.edu\nGoogle Scholar • ORCID • LinkedIn\n\n\n\n\n\n\n\n人工智能（AI）已成为日常生活的一部分，为语音助手、医疗诊断等应用提供动力。但这种进步伴随着难以持续的数据与能源规模化成本。AI 与人类智能之间仍存在巨大鸿沟，尤其体现在能效上：支撑 AI 的数据中心耗电量堪比小型城市，而人脑只需一餐的能量即可运作；也体现在认知能力上：AI 需要海量数据才能学习的任务，人类却能在有限经验下掌握。\n\n\n\n我们的研究愿景是通过软硬件协同设计范式缩小这一差距，该范式跨越电气工程与计算机科学（EECS）的多个层级，并汲取认知神经科学的灵感。最终目标是实现接近人脑的能效与认知能力，从而在广泛应用中赋能下一代 AI 系统。\n\n […] […] […] […] […] […] […] […] […] […] […] […] […] […] […]\n\n\n\n\n\n基于我们已有的工作（见上图），我们提出一个跨层协同设计方法，覆盖器件、电路、架构、算法与应用等层级：\n\n\n我们建模各类新型存储器器件，包括非易失与易失忆阻器，为模拟存内计算奠定物理基础，并利用其丰富的模拟动态特性。\n\n\n\n我们设计模拟与混合信号电路，利用器件级动态特性来模拟生物突触与神经元的随机性与时序行为。\n\n\n\n我们开发层次化、分布式架构，实现模拟与数字域之间的高效片上通信，从而支持多层信息处理与高度并行计算。\n\n\n\n我们协同设计神经网络结构与片上学习算法，以适配脑启发硬件基底，融入脉冲、事件驱动与模拟特性，实现实时片上学习。\n\n\n\n我们将这些高能效、低时延系统集成到传感器、可穿戴与移动设备中，满足广泛边缘应用对即时智能决策与低功耗的需求。"
+  },
+  {
+    "objectID": "index.zh.html#研究愿景",
+    "href": "index.zh.html#研究愿景",
+    "title": "Yi Huang",
+    "section": "",
+    "text": "人工智能（AI）已成为日常生活的一部分，为语音助手、医疗诊断等应用提供动力。但这种进步伴随着难以持续的数据与能源规模化成本。AI 与人类智能之间仍存在巨大鸿沟，尤其体现在能效上：支撑 AI 的数据中心耗电量堪比小型城市，而人脑只需一餐的能量即可运作；也体现在认知能力上：AI 需要海量数据才能学习的任务，人类却能在有限经验下掌握。\n\n\n\n我们的研究愿景是通过软硬件协同设计范式缩小这一差距，该范式跨越电气工程与计算机科学（EECS）的多个层级，并汲取认知神经科学的灵感。最终目标是实现接近人脑的能效与认知能力，从而在广泛应用中赋能下一代 AI 系统。\n\n […] […] […] […] […] […] […] […] […] […] […] […] […] […] […]\n\n\n\n\n\n基于我们已有的工作（见上图），我们提出一个跨层协同设计方法，覆盖器件、电路、架构、算法与应用等层级：\n\n\n我们建模各类新型存储器器件，包括非易失与易失忆阻器，为模拟存内计算奠定物理基础，并利用其丰富的模拟动态特性。\n\n\n\n我们设计模拟与混合信号电路，利用器件级动态特性来模拟生物突触与神经元的随机性与时序行为。\n\n\n\n我们开发层次化、分布式架构，实现模拟与数字域之间的高效片上通信，从而支持多层信息处理与高度并行计算。\n\n\n\n我们协同设计神经网络结构与片上学习算法，以适配脑启发硬件基底，融入脉冲、事件驱动与模拟特性，实现实时片上学习。\n\n\n\n我们将这些高能效、低时延系统集成到传感器、可穿戴与移动设备中，满足广泛边缘应用对即时智能决策与低功耗的需求。"
+  },
+  {
+    "objectID": "news.zh.html",
+    "href": "news.zh.html",
+    "title": "新闻",
+    "section": "",
+    "text": "2026.01: 我们的论文“Memristive cellular neural networks for fast in-pixel computing”发表于 Nature Electronics。论文链接：Ravichandran et al., Nat. Electron. 9, (2026)。相关报道：EurekAlert 链接、ScienMag 链接、Research Briefing 链接。\nNature Electronics 的编辑评论文章“Memristors march on”：链接。\n2026.01: 我们的论文“Event-based neuromorphic sensing system with flexible haptic sensors and a memristive system on a chip”发表于 Nature Sensors。论文链接：Zhao et al., Nat. Sens. 1, 163–171 (2026)。相关报道：TechXplore 链接、News & Views 链接、Behind the Paper 链接。\n2025.08: 我顺利完成博士论文答辩。\n2025.07: 我们的论文“Radiofrequency signal processing with a memristive system-on-a-chip”以封面文章发表于 Nature Electronics。论文链接：Huang et al., Nat Electron 8, 587–596 (2025)。相关报道：Nature Electronics 封面专栏 链接、UMass 新闻 链接、TechXplore 链接、Behind the Paper 链接。"
+  },
+  {
+    "objectID": "publications.zh.html",
+    "href": "publications.zh.html",
+    "title": "论文",
+    "section": "",
+    "text": "全部类型 期刊 会议   全部年份   默认顺序 第一作者优先"
+  },
+  {
+    "objectID": "research.zh.html",
+    "href": "research.zh.html",
+    "title": "研究亮点",
+    "section": "",
+    "text": "忆阻器片上系统（SoC） \n\n\n\n\n\n\n\n CMOS 细胞神经网络 \n\n\n\n\n\n\n\n 类脑感知系统 \n\n\n\n\n\n\n\n 忆阻器 AI 加速器"
+  }
+]
