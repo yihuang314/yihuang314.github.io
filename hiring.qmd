@@ -1,0 +1,41 @@
+---
+title: "Opportunities"
+---
+
+::: {.home-page}
+
+## Prospective PhD Students
+
+I am recruiting multiple PhD students to join my research group starting Fall 2026 or Spring 2027. We will explore hardware-software co-design for energy-efficient, intelligent computing systems powering next-generation AI, focusing on two complementary directions:
+
+- Brain-inspired circuits and architectures based on CMOS and emerging memory devices
+- Energy-efficient algorithms and applications with analog in-memory computing hardware
+
+
+### Why Join Us?
+
+#### Hands-on mentorship
+
+As an early-career PI with expertise spanning both hardware and software, I provide hands-on guidance while encouraging ambitious research directions. I have experience guiding students toward publications in both engineering-focused venues (e.g., IEEE Transactions) and high-impact interdisciplinary journals (e.g., Nature series). Feel free to reach out to my [collaborators](http://nano.ecs.umass.edu/?_ga=2.62088623.2061699384.1566844657-1135324780.1544805653) to hear about their experience working with me.
+
+#### Interdisciplinary and collaborative environment
+
+Our EECS department houses programs in Electrical Engineering, Computer Engineering, and Computer Science, creating collaboration opportunities across the full hardware-to-software stack. The department is also home to a leading research team ([TENN Lab](https://neuromorphic.eecs.utk.edu/)) in neuromorphic architectures, learning, and applications, a natural foundation for interdisciplinary work. We are also minutes from [Oak Ridge National Laboratory](https://www.ornl.gov/), offering unique opportunities to collaborate with a world-class research facility.
+
+#### Life beyond the lab
+
+Research is a marathon, not a sprint, and we believe in a balanced lifestyle. The Great Smoky Mountains National Park is right around the corner for hiking, camping, and outdoor adventures. I am also an ACE-certified personal trainer and fitness nutrition specialist and happy to share tips if you are into fitness.
+
+### Who I'm Looking for:
+
+Self-motivated students who love exploring what's next. Ideal candidates have:
+
+- An interest in brain-inspired hardware and software for next-generation AI
+- A strong background in analog circuit design or machine learning algorithm
+- Previous experience with neuromorphic computing, in-memory computing, or brain-inspired computing is a plus
+
+### How to Apply:
+
+If you are interested in working with me, please email me at yihuang@utk.edu with your: 1) CV, 2) transcripts, 3) a brief statement of your research interests and career goals, and 4) TOEFL or IELTS score (if applicable).
+
+:::

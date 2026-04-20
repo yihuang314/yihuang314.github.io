@@ -1,0 +1,12 @@
+---
+title: "News"
+---
+
+- **2026.01:** Our paper "Memristive cellular neural networks for fast in-pixel computing" is published in **_Nature Electronics_**. Link to the paper: [Ravichandran et al., _Nat. Electron._ 9, (2026)](https://www.nature.com/articles/s41928-025-01555-3). See EurekAlert [here](https://www.eurekalert.org/news-releases/1113506), ScienMag news [here](https://scienmag.com/accelerating-in-pixel-computing-with-memristive-neural-networks/), a Research Briefing [here](https://www.nature.com/articles/s41928-025-01559-z).  
+A _Nature Electronics_ Editorial piece that highlights our work: ["Memristors march on"](https://www.nature.com/articles/s41928-026-01587-3).
+
+- **2026.01:** Our paper "Event-based neuromorphic sensing system with flexible haptic sensors and a memristive system on a chip" is published in **_Nature Sensors_**. Link to the paper: [Zhao et al., _Nat. Sens._ 1, 163–171 (2026)](https://www.nature.com/articles/s44460-025-00013-z). See TechXplore highlight [here](https://techxplore.com/news/2026-01-analog-hardware-internet-bottlenecks.html), News & Views [here](https://www.nature.com/articles/s44460-025-00025-9), and a 'Behind the paper' piece [here](https://communities.springernature.com/posts/bringing-intelligence-to-sensors-an-event-based-neuromorphic-sensing-system).
+
+- **2025.08:** I successfully defended my Ph.D. thesis. 
+
+- **2025.07:** Our paper "Radiofrequency signal processing with a memristive system-on-a-chip" is published in **_Nature Electronics_** as a cover article. Link to the paper: [Huang et al., _Nat. Electron._ 8, 587–596 (2025)](https://www.nature.com/articles/s41928-025-01409-y). See the _Nature Electronics_ cover feature [here](https://www.nature.com/natelectron/volumes/8/issues/7), UMass news [here](https://www.umass.edu/engineering/news/qiangfei-xia-nature-electronics), TechXplore highlight [here](https://techxplore.com/news/2025-07-memristor-based-boost-radiofrequency.html), and a 'Behind the paper' piece [here](https://communities.springernature.com/posts/memristive-system-on-a-chip-for-intelligent-wireless-communications).

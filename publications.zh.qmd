@@ -1,0 +1,132 @@
+﻿---
+title: "论文"
+lang: zh
+bibliography: references.bib
+csl: ieee_tcasi.csl
+citeproc: true
+nocite: |
+  @*
+---
+
+<div class="pub-controls" aria-label="论文筛选控件">
+  <input id="pub-search" type="search" placeholder="搜索论文..." aria-label="搜索论文">
+  <select id="pub-type" aria-label="按类型筛选">
+    <option value="all">全部类型</option>
+    <option value="journal">期刊</option>
+    <option value="conference">会议</option>
+  </select>
+  <select id="pub-year-filter" aria-label="按年份筛选">
+    <option value="all">全部年份</option>
+  </select>
+  <select id="pub-sort" aria-label="论文排序">
+    <option value="default">默认顺序</option>
+    <option value="first-author">第一作者优先</option>
+  </select>
+</div>
+
+::: {#refs}
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const refs = document.querySelector("#refs");
+  if (!refs) return;
+
+  const nameRegex = /\b(Yi Huang|Y\.?\s*Huang|Huang,\s*Yi|Huang,\s*Y\.?)\b/g;
+  const firstAuthorRegex = /^\s*(Yi Huang|Y\.?\s*Huang|Huang,\s*Yi|Huang,\s*Y\.?)\b/i;
+  async function ensureEntries() {
+    let rawEntries = Array.from(refs.querySelectorAll(".csl-entry"));
+    if (rawEntries.length) return rawEntries;
+
+    try {
+      const html = await fetch("publications.html").then((r) => r.text());
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      const sourceRefs = doc.querySelector("#refs");
+      if (sourceRefs) {
+        refs.innerHTML = sourceRefs.innerHTML;
+      }
+    } catch (_) {
+      // If fetch fails, keep empty.
+    }
+
+    return Array.from(refs.querySelectorAll(".csl-entry"));
+  }
+
+  ensureEntries().then((rawEntries) => {
+    const entries = rawEntries.map((entry, index) => {
+      const rightInline = entry.querySelector(".csl-right-inline");
+      const authorNode = Array.from(rightInline?.childNodes || []).find(
+        (node) => node.nodeType === Node.TEXT_NODE && (node.textContent || "").trim()
+      );
+      const authorText = authorNode?.textContent || "";
+      const isFirstAuthor = firstAuthorRegex.test(authorText);
+
+      entry.innerHTML = entry.innerHTML.replace(nameRegex, "<strong>$1</strong>");
+      entry.querySelectorAll("i, em").forEach((el) => {
+        if (el.closest("strong")) return;
+        const strong = document.createElement("strong");
+        el.parentNode.insertBefore(strong, el);
+        strong.appendChild(el);
+      });
+      const text = entry.textContent || "";
+      const yearMatches = text.match(/\b(19|20)\d{2}\b/g) || [];
+      const year = yearMatches.length ? Number(yearMatches[yearMatches.length - 1]) : null;
+      const type = /proceedings|conference|symposium|workshop|proc\.?/i.test(text)
+        ? "conference"
+        : "journal";
+      return { entry, text: text.toLowerCase(), year, type, index, isFirstAuthor };
+    });
+
+    const searchInput = document.querySelector("#pub-search");
+    const typeSelect = document.querySelector("#pub-type");
+    const yearFilter = document.querySelector("#pub-year-filter");
+    const sortSelect = document.querySelector("#pub-sort");
+
+    const years = Array.from(
+      new Set(entries.map((item) => item.year).filter((year) => year !== null))
+    ).sort((a, b) => b - a);
+
+    if (yearFilter) {
+      for (const year of years) {
+        const option = document.createElement("option");
+        option.value = String(year);
+        option.textContent = String(year);
+        yearFilter.appendChild(option);
+      }
+    }
+
+    function render() {
+      const query = (searchInput?.value || "").trim().toLowerCase();
+      const type = typeSelect?.value || "all";
+      const yearValue = yearFilter?.value || "all";
+      const sortMode = sortSelect?.value || "default";
+
+      let filtered = entries.filter((item) => {
+        const matchesQuery = !query || item.text.includes(query);
+        const matchesType = type === "all" || item.type === type;
+        const matchesYear = yearValue === "all" || String(item.year) === yearValue;
+        return matchesQuery && matchesType && matchesYear;
+      });
+
+      if (sortMode === "first-author") {
+        filtered.sort(
+          (a, b) => Number(b.isFirstAuthor) - Number(a.isFirstAuthor) || a.index - b.index
+        );
+      } else {
+        filtered.sort((a, b) => a.index - b.index);
+      }
+
+      refs.innerHTML = "";
+      for (const item of filtered) {
+        refs.appendChild(item.entry);
+      }
+    }
+
+    searchInput?.addEventListener("input", render);
+    typeSelect?.addEventListener("change", render);
+    yearFilter?.addEventListener("change", render);
+    sortSelect?.addEventListener("change", render);
+    render();
+  });
+});
+</script>

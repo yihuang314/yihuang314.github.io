@@ -1,0 +1,332 @@
+body {
+  line-height: 1.6;
+}
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1rem;
+}
+
+/* Reduce vertical gap before bullet lists */
+p:has(+ ul),
+p:has(+ ol) {
+  margin-bottom: 0.3rem;
+}
+
+/* Reduce left indent before bullet marker */
+ul, ol {
+  padding-left: 1rem;
+}
+
+
+.home-page h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+  margin-left: 0;
+  color: #111;
+}
+
+.home-page h1 a {
+  color: inherit !important;
+  text-decoration: none;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.home-page h1 a:link,
+.home-page h1 a:visited,
+.home-page h1 a:hover,
+.home-page h1 a:focus,
+.home-page h1 a:active {
+  color: #111 !important;
+}
+
+.home-page a.name-link:link,
+.home-page a.name-link:visited,
+.home-page a.name-link:hover,
+.home-page a.name-link:focus,
+.home-page a.name-link:active {
+  color: #111 !important;
+  font-weight: 900;
+}
+
+.home-page h1 a:hover,
+.home-page h1 a:focus {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.home-page h1 + p,
+.home-page h1 + ul,
+.home-page h1 + ol,
+.home-page h1 + blockquote,
+.home-page h1 + div {
+  margin-left: 0;
+}
+
+.home-page ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.home-page h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #0973B4;
+  padding-bottom: 0.25rem;
+  margin-top: 1.5rem;
+  margin-left: 0;
+}
+
+.home-page h2 + p,
+.home-page h2 + ul,
+.home-page h2 + ol,
+.home-page h2 + blockquote,
+.home-page h2 + div {
+  margin-left: 0;
+}
+
+.home-page h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0973B4;
+  margin-top: 1rem;
+  margin-left: 0;
+}
+
+.home-page h3 + p,
+.home-page h3 + ul,
+.home-page h3 + ol,
+.home-page h3 + blockquote,
+.home-page h3 + div {
+  margin-left: 0;
+}
+
+.home-page h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0973B4;
+  margin-top: 0.8rem;
+  margin-left: 0;
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.home-page h4::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: currentColor;
+  line-height: 1;
+}
+
+.home-page h4 + p,
+.home-page h4 + ul,
+.home-page h4 + ol,
+.home-page h4 + blockquote,
+.home-page h4 + div {
+  margin-left: 1rem;
+}
+
+.home-page h1 + *,
+.home-page h2 + *,
+.home-page h3 + *,
+.home-page h4 + * 
+{
+  margin-left: inherit;
+}
+
+.quarto-title-banner {
+  margin-bottom: 1rem;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.pub-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.pub-controls input,
+.pub-controls select {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.image-box {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  display: flex;
+}
+
+.image-box figure,
+.image-box .image-figure {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-box p {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-box figcaption {
+  text-align: center;
+  font-size: 1rem;
+  color: #0973B4;
+  margin-top: 0.2rem;
+  font-weight: 900;
+}
+
+.image-box figcaption a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Responsive inline SVG container */
+.svg-responsive img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay clickable references on top of the SVG */
+.svg-overlay {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.svg-overlay .svg-ref {
+  position: absolute;
+  font:inherit;
+  font-weight: 500;
+  font-size: 11px;
+  color: #549AD1;
+  text-decoration: none;
+  background: #E5E9F0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  line-height: 1;
+}
+
+/* Ye2023 reference position */
+.svg-overlay .svg-ref-1 {
+  left: 63%;
+  top: 92%;
+}
+
+/* TODO: set positions for additional refs */
+.svg-overlay .svg-ref-2 {
+  left: 60%;
+  top: 81%;
+}
+
+.svg-overlay .svg-ref-3 {
+  left: 63%;
+  top: 81%;
+}
+
+.svg-overlay .svg-ref-4 {
+  left: 66%;
+  top: 81%;
+}
+
+.svg-overlay .svg-ref-5 {
+  left: 57%;
+  top: 70.5%;
+}
+
+.svg-overlay .svg-ref-6 {
+  left: 59.5%;
+  top: 70.5%;
+}
+
+.svg-overlay .svg-ref-7 {
+  left: 62.5%;
+  top: 70.5%;
+}
+
+.svg-overlay .svg-ref-8 {
+  left: 54%;
+  top: 59.5%;
+}
+
+.svg-overlay .svg-ref-9 {
+  left: 56.5%;
+  top: 59.5%;
+}
+
+.svg-overlay .svg-ref-10 {
+  left: 59%;
+  top: 59.5%;
+}
+
+.svg-overlay .svg-ref-11 {
+  left: 52.5%;
+  top: 49%;
+}
+
+.svg-overlay .svg-ref-12 {
+  left: 55%;
+  top: 49%;
+}
+
+.svg-overlay .svg-ref-13 {
+  left: 26%;
+  top: 31.5%;
+}
+
+.svg-overlay .svg-ref-14 {
+  left: 28.5%;
+  top: 31.5%;
+}
+
+.svg-overlay .svg-ref-15 {
+  left: 31%;
+  top: 31.5%;
+}

@@ -1,0 +1,37 @@
+﻿---
+title: "Yi Huang"
+lang: zh
+---
+## 关于
+
+我将于 2026 年秋季加入田纳西大学诺克斯维尔分校 [Min H. Kao 电气工程与计算机科学系](https://eecs.utk.edu/)，担任助理教授，并加入 [Foundation Artificial Intelligence Cluster](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/)。我目前是麻省大学阿默斯特分校 [电气与计算机工程系](https://www.umass.edu/engineering/electrical-and-computer-engineering) 的博士后研究助理，2025 年 9 月在 [Qiangfei Xia](http://nano.ecs.umass.edu/?_ga=2.62088623.2061699384.1566844657-1135324780.1544805653) 教授指导下获得博士学位，并与 [Joshua J. Yang](https://sites.usc.edu/jjyang/)、[Linda Katehi](https://www.lindakatehi.com/) 教授及 [TetraMem Inc.](https://tetramem.com/) 紧密合作。我还在 [华中科技大学](https://hust.edu.cn/) [人工智能与自动化学院](https://aia.hust.edu.cn/) 获得学士与硕士学位，并师从 [曾志刚](https://aia.hust.edu.cn/zhigangzeng/) 教授。更多信息详见我的 [CV](CV_YiHuang_Apr_2026.pdf)。
+
+## 任职经历
+
+- 2026 年 8 月起，田纳西大学诺克斯维尔分校 助理教授
+- 2025 年 9 月至今，麻省大学阿默斯特分校 博士后研究助理
+
+## 教育背景
+
+- 电气与计算机工程博士，麻省大学阿默斯特分校，2025
+- 控制科学与工程 / 系统工程 硕士 / 学士，华中科技大学，2019 / 2016
+
+## 荣誉与奖励
+
+- 麻省大学阿默斯特分校 ECE David H. Navon 奖学金，2022
+- 麻省大学阿默斯特分校 ECE Graduate Fellowship，2020
+
+## 期刊/会议审稿
+- _Science Advances_
+- _Nature Communications_
+- _IEEE Transactions on Cybernetics_
+- _IEEE Transactions on Systems, Man and Cybernetics: Systems_
+- _IEEE Transactions on Emerging Topics in Computational Intelligence_
+- _IEEE Transactions on Circuits and Systems II: Express Briefs_
+- _Advanced Functional Materials_
+- _Knowledge-Based Systems_
+- _Information Sciences_
+- _Neural Networks_
+- _Cognitive Computation_
+- _Scientific Reports_
+- _2026 IEEE International Symposium on Circuits and Systems_

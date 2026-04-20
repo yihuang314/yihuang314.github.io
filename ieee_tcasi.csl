@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" default-locale="en-US">
+  <info>
+    <title>IEEE Transactions (All Authors, Lab Web)</title>
+    <id>http://www.zotero.org/styles/ieee-transactions-all-authors-lab-web</id>
+    <link href="http://www.zotero.org/styles/ieee" rel="template"/>
+    <category citation-format="numeric"/>
+    <category field="engineering"/>
+    <category field="communications"/>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+  </info>
+
+  <macro name="author">
+    <names variable="author" delimiter=", " and="text" et-al-min="999" et-al-use-first="999">
+      <name initialize-with=". " delimiter=", " and="text"/>
+      <label form="long" prefix=", " />
+    </names>
+  </macro>
+
+  <macro name="issued">
+    <date variable="issued">
+      <date-part name="month" form="short" suffix=" "/>
+      <date-part name="year"/>
+    </date>
+  </macro>
+
+  <macro name="title">
+    <text variable="title" quotes="true"/>
+  </macro>
+
+  <macro name="container">
+    <text variable="container-title" font-style="italic"/>
+  </macro>
+
+  <macro name="locators">
+    <group delimiter=", ">
+      <text variable="volume" prefix="vol. "/>
+      <text variable="issue" prefix="no. "/>
+      <text variable="page" prefix="pp. "/>
+    </group>
+  </macro>
+
+  <macro name="doi">
+    <text variable="DOI" prefix="doi: "/>
+  </macro>
+
+  <citation collapse="citation-number">
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography et-al-min="999" et-al-use-first="999" second-field-align="flush">
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="] " />
+      <text macro="author" suffix=", "/>
+      <text macro="title" suffix=", "/>
+      <choose>
+        <if type="article-journal">
+          <text macro="container" suffix=", "/>
+          <text macro="locators" suffix=", "/>
+        </if>
+        <else-if type="paper-conference">
+          <text variable="container-title" font-style="italic" prefix="in " suffix=", "/>
+          <text macro="locators" suffix=", "/>
+        </else-if>
+        <else>
+          <text variable="publisher" suffix=", "/>
+        </else>
+      </choose>
+      <text macro="issued" suffix=", "/>
+      <text macro="doi"/>
+    </layout>
+  </bibliography>
+</style>

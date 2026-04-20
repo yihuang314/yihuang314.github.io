@@ -1,0 +1,37 @@
+---
+title: "Yi Huang"
+---
+## About
+
+I will join the [Min H. Kao Department of EECS](https://eecs.utk.edu/) at the [University of Tennessee, Knoxville](https://www.utk.edu/) as an Assistant Professor in Fall 2026, where I will be part of the [Foundation Artificial Intelligence Cluster](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/). I am currently a Postdoctoral Research Associate in the [Department of Electrical and Computer Engineering](https://www.umass.edu/engineering/electrical-and-computer-engineering) at the [University of Massachusetts Amherst](https://www.umass.edu/), where I received my Ph.D. in September 2025 under the supvision of Professor [Qiangfei Xia](http://nano.ecs.umass.edu/?_ga=2.62088623.2061699384.1566844657-1135324780.1544805653) and in close collaboration with Professor [Joshua J. Yang](https://sites.usc.edu/jjyang/), Professor [Linda Katehi](https://www.lindakatehi.com/) and [TetraMem Inc.](https://tetramem.com/). I also hold both a B.E. and an M.S. from the [School of Artificial Intelligence and Automation](https://aia.hust.edu.cn/) at [Huazhong University of Science and Technology](https://hust.edu.cn/), where I worked with Professor [Zhigang Zeng](https://aia.hust.edu.cn/zhigangzeng/). Further details are available in my [CV](CV_YiHuang_Apr_2026.pdf).
+
+
+## Positions
+
+- Starting August 2026, Assistant Professor, University of Tennessee, Knoxville
+- September 2025 – present, Postdoctoral Research Associate, University of Massachusetts Amherst
+
+## Education
+
+- PhD in Electrical and Computer Engineering, University of Massachusetts Amherst, 2025
+- MS / BE in Control Science and Engineering / System Engineering, Huazhong University of Science and Technology, 2019 / 2016
+
+## Honors and Awards
+
+- ECE David H. Navon Scholarship of University of Massachusetts Amherst, 2022
+- ECE Graduate Fellowship of University of Massachusetts Amherst,2020
+
+## Journal/Conference Reviewer
+- _Science Advances_ 
+- _Nature Communications_
+- _IEEE Transactions on Cybernetics_
+- _IEEE Transactions on Systems, Man and Cybernetics: Systems_ 
+- _IEEE Transactions on Emerging Topics in Computational Intelligence_
+- _IEEE Transactions on Circuits and Systems II: Express Briefs_
+- _Advanced Functional Materials_
+- _Knowledge-Based Systems_
+- _Information Sciences_
+- _Neural Networks_
+- _Cognitive Computation_
+- _Scientific Reports_
+- _2026 IEEE International Symposium on Circuits and Systems_
