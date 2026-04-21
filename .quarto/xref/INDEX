@@ -1,0 +1,44 @@
+{
+  "cv.qmd": {
+    "cv.html": "f0e9317d"
+  },
+  "cv.zh.qmd": {
+    "cv.zh.html": "757d0b4a"
+  },
+  "fun.qmd": {
+    "fun.html": "fad20e82"
+  },
+  "hiring.qmd": {
+    "hiring.html": "e01156ec"
+  },
+  "hiring.zh.qmd": {
+    "hiring.zh.html": "29dfee8e"
+  },
+  "index.zh.qmd": {
+    "index.zh.html": "f36a25fe"
+  },
+  "news.qmd": {
+    "news.html": "411513d8"
+  },
+  "news.zh.qmd": {
+    "news.zh.html": "55320f03"
+  },
+  "publications.qmd": {
+    "publications.html": "9be6e906"
+  },
+  "publications.zh.qmd": {
+    "publications.zh.html": "4aba9d64"
+  },
+  "research.qmd": {
+    "research.html": "ec49c749"
+  },
+  "research.zh.qmd": {
+    "research.zh.html": "8dd2f147"
+  },
+  "team.qmd": {
+    "team.html": "6938d2fd"
+  },
+  "index.qmd": {
+    "index.html": "6b13a8f2"
+  }
+}
