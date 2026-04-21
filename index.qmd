@@ -8,9 +8,9 @@
 
 ::: {.column width="65%"}
 Incoming Assistant Professor\
-Min H. Kao Department of EECS\
-Tickle College of Engineering\
-University of Tennessee, Knoxville
+[Min H. Kao Department of EECS](https://eecs.utk.edu/)\
+[Tickle College of Engineering](https://tickle.utk.edu/)\
+[University of Tennessee, Knoxville](https://www.utk.edu/)
 
 - Email: [yihuang\@utk.edu](mailto:yihuang@utk.edu)
 - [Google Scholar](https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&hl=en) • [ORCID](hhttps://orcid.org/0000-0001-9628-1721) • [LinkedIn](https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true)
@@ -20,7 +20,7 @@ University of Tennessee, Knoxville
 ## Research Vision
 
 ### The Challenge: The Gap Between AI and Human Intelligence
-Artificial intelligence (AI) has become a part of everyday life, powering everything from voice assistants to medical diagnostics. But this progress comes at the cost of unsustainable scaling in data and energy consumption. A profound gap persists between AI and human intelligence, particularly in energy efficiency, where data centers behind AI consume as much electricity as small cities while the human brain operates on the energy of a single meal, and in cognitive capability, where AI requires massive datasets to learn tasks that humans can master from limited experience. 
+Artificial intelligence (AI) has become a part of our everyday life, powering everything from voice assistants to medical diagnostics. But this progress comes at the cost of unsustainable scaling in data and energy consumption. A huge gap persists between AI and human intelligence, particularly in energy efficiency, where data centers behind AI consume as much electricity as small cities while the human brain operates on the energy of a single meal, and in cognitive capability, where AI requires massive datasets to learn tasks that humans can master from limited experience. 
 
 
 ### The Goal: Human-level Energy Efficiency and Cognitive Capability  
@@ -75,10 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 ### The Approach: A Cross-layer Co-design Framework 
-Building on our prior work (see the figure above), we pursue this vision through a cross-layer co-design approach that spans devices, circuits, architectures, algorithms, and applications:   
+We pursue this vision through analog in-memory computing (AIMC) systems inspired by the human brain and built upon emerging memory devices. This approach emulates the operating principles of biological neural systems: data is processed where it is stored, eliminating the separation between CPU and memory that characterizes conventional architectures, and computation operates directly on analog signals, without discrete digital data representations.
+
+Building on our prior work (see figure above), our approach centers on a cross-layer co-design framework that spans devices, circuits, architectures, algorithms, and applications:  
 
 #### Emerging memory devices 
-We model emerging memory devices, including non-volatile and volatile memristors, to establish the physical foundation for analog in-memory computing that exploits their rich analog dynamics.
+We model emerging memory devices, including non-volatile and volatile memristors, to establish the physical foundation for AIMC hardware that exploits their rich analog dynamics.
 
 #### Synapse and neuron circuits
 We design analog and mixed-signal circuits that leverage these device-level dynamics to emulate the stochastic and temporal behavior of biological synapses and neurons.
