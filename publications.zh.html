@@ -417,6 +417,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    function scrollToHashTarget() {
+      const hash = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : "";
+      if (!hash) return;
+      const target = document.getElementById(hash);
+      if (!target) return;
+      target.scrollIntoView({ block: "start" });
+    }
+
     function render() {
       const query = (searchInput?.value || "").trim().toLowerCase();
       const type = typeSelect?.value || "all";
@@ -434,11 +442,16 @@ document.addEventListener("DOMContentLoaded", () => {
       for (const item of filtered) {
         refs.appendChild(item.entry);
       }
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(scrollToHashTarget);
+      });
     }
 
     searchInput?.addEventListener("input", render);
     typeSelect?.addEventListener("change", render);
     yearFilter?.addEventListener("change", render);
+    window.addEventListener("hashchange", scrollToHashTarget);
     render();
   });
 });
