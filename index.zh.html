@@ -326,9 +326,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </div><div class="column" style="width:65%;">
 <p>即将入职助理教授<br>
-Min H. Kao 电气工程与计算机科学系<br>
-Tickle 工程学院<br>
-田纳西大学诺克斯维尔分校</p>
+<a href="https://eecs.utk.edu/">Min H. Kao 电气工程与计算机科学系</a><br>
+<a href="https://tickle.utk.edu/">Tickle 工程学院</a><br>
+<a href="https://www.utk.edu/">田纳西大学诺克斯维尔分校</a></p>
 <ul>
 <li>电子邮件: <a href="mailto:yihuang@utk.edu">yihuang@utk.edu</a></li>
 <li><a href="https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&amp;hl=en">Google Scholar</a> • <a href="hhttps://orcid.org/0000-0001-9628-1721">ORCID</a> • <a href="https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true">LinkedIn</a></li>
@@ -337,8 +337,8 @@ Tickle 工程学院<br>
 </div>
 <section id="研究愿景" class="level2">
 <h2 class="anchored" data-anchor-id="研究愿景">研究愿景</h2>
-<section id="挑战ai-与人类智能之间的鸿沟" class="level3">
-<h3 class="anchored" data-anchor-id="挑战ai-与人类智能之间的鸿沟">挑战：AI 与人类智能之间的鸿沟</h3>
+<section id="挑战人工智能与人类智能之间的鸿沟" class="level3">
+<h3 class="anchored" data-anchor-id="挑战人工智能与人类智能之间的鸿沟">挑战：人工智能与人类智能之间的鸿沟</h3>
 <p>人工智能（AI）已成为日常生活的一部分，为语音助手、医疗诊断等应用提供动力。但这种进步伴随着难以持续的数据与能源规模化成本。AI 与人类智能之间仍存在巨大鸿沟，尤其体现在能效上：支撑 AI 的数据中心耗电量堪比小型城市，而人脑只需一餐的能量即可运作；也体现在认知能力上：AI 需要海量数据才能学习的任务，人类却能在有限经验下掌握。</p>
 </section>
 <section id="目标人类水平的能效与认知能力" class="level3">
@@ -387,10 +387,11 @@ document.addEventListener("DOMContentLoaded", () => {
 </section>
 <section id="方法跨层协同设计框架" class="level3">
 <h3 class="anchored" data-anchor-id="方法跨层协同设计框架">方法：跨层协同设计框架</h3>
-<p>基于我们已有的工作（见上图），我们提出一个跨层协同设计方法，覆盖器件、电路、架构、算法与应用等层级：</p>
+<p>我们通过受人脑启发、并构建在新型存储器件基础上的模拟存内计算（AIMC）系统来实现这一愿景。该方法模拟了生物神经系统的工作机理：数据在存储位置直接处理，消除了传统架构中 CPU 与存储器分离带来的开销；计算也直接在模拟信号上进行，而非依赖离散的数字数据表示。</p>
+<p>基于我们已有的工作（见上图），该方法以跨层协同设计框架为核心，覆盖器件、电路、架构、算法与应用等层级：</p>
 <section id="新型存储器器件" class="level4">
 <h4 class="anchored" data-anchor-id="新型存储器器件">新型存储器器件</h4>
-<p>我们建模各类新型存储器器件，包括非易失与易失忆阻器，为模拟存内计算奠定物理基础，并利用其丰富的模拟动态特性。</p>
+<p>我们建模各类新型存储器器件，包括非易失与易失忆阻器，为 AIMC 硬件奠定物理基础，并利用其丰富的模拟动态特性。</p>
 </section>
 <section id="突触与神经元电路" class="level4">
 <h4 class="anchored" data-anchor-id="突触与神经元电路">突触与神经元电路</h4>
@@ -416,50 +417,95 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </main> <!-- /main -->
 ﻿<script>
+
 document.addEventListener("DOMContentLoaded", () => {
+
   const path = window.location.pathname;
+
   const isZh = /\.zh\.html$/.test(path);
 
+
+
   const labelMap = {
+
     index: "主页",
+
     news: "新闻",
+
     research: "研究",
+
     publications: "论文",
+
     cv: "PI",
+
     hiring: "招募",
+
     team: "团队",
+
     fun: "Fun"
+
   };
 
+
+
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
   const enLink = Array.from(navLinks).find((el) => el.textContent.trim() === "EN");
+
   const zhLink = Array.from(navLinks).find((el) => el.textContent.trim() === "中文");
 
+
+
   navLinks.forEach((link) => {
+
     if (link === enLink || link === zhLink) return;
+
     const href = link.getAttribute("href");
+
     if (!href) return;
+
     const match = href.match(/([^/]+)\.html$/);
+
     if (!match) return;
+
     const base = match[1].replace(/\.zh$/, "");
+
     if (isZh) {
+
       link.setAttribute("href", href.replace(/\.html$/, ".zh.html"));
+
       if (labelMap[base]) {
+
         link.textContent = labelMap[base];
+
       }
+
     }
+
   });
 
+
+
   const current = path.split("/").pop() || "index.html";
+
   const base = current.replace(/\.zh\.html$/, ".html");
 
+
+
   if (enLink) {
+
     enLink.setAttribute("href", base);
+
   }
+
   if (zhLink) {
+
     zhLink.setAttribute("href", base.replace(/\.html$/, ".zh.html"));
+
   }
+
 });
+
 </script>
 
 <script id="quarto-html-after-body" type="application/javascript">

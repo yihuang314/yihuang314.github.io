@@ -349,7 +349,7 @@ div.csl-indent {
 
 
 <div class="pub-controls" aria-label="论文筛选控件">
-<p><input id="pub-search" type="search" placeholder="搜索论文..." aria-label="搜索论文"> <select id="pub-type" aria-label="按类型筛选"> <option value="all">全部类型</option> <option value="journal">期刊</option> <option value="conference">会议</option> </select> <select id="pub-year-filter" aria-label="按年份筛选"> <option value="all">全部年份</option> </select> <select id="pub-sort" aria-label="论文排序"> <option value="default">默认顺序</option> <option value="first-author">第一作者优先</option> </select></p>
+<p><input id="pub-search" type="search" placeholder="搜索论文..." aria-label="搜索论文"> <select id="pub-type" aria-label="按类型筛选"> <option value="all">全部类型</option> <option value="journal">期刊</option> <option value="conference">会议</option> </select> <select id="pub-year-filter" aria-label="按年份筛选"> <option value="all">全部年份</option> </select></p>
 </div>
 <div id="refs" role="list">
 
@@ -360,7 +360,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!refs) return;
 
   const nameRegex = /\b(Yi Huang|Y\.?\s*Huang|Huang,\s*Yi|Huang,\s*Y\.?)\b/g;
-  const firstAuthorRegex = /^\s*(Yi Huang|Y\.?\s*Huang|Huang,\s*Yi|Huang,\s*Y\.?)\b/i;
   async function ensureEntries() {
     let rawEntries = Array.from(refs.querySelectorAll(".csl-entry"));
     if (rawEntries.length) return rawEntries;
@@ -385,9 +384,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const authorNode = Array.from(rightInline?.childNodes || []).find(
         (node) => node.nodeType === Node.TEXT_NODE && (node.textContent || "").trim()
       );
-      const authorText = authorNode?.textContent || "";
-      const isFirstAuthor = firstAuthorRegex.test(authorText);
-
       entry.innerHTML = entry.innerHTML.replace(nameRegex, "<strong>$1</strong>");
       entry.querySelectorAll("i, em").forEach((el) => {
         if (el.closest("strong")) return;
@@ -401,13 +397,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const type = /proceedings|conference|symposium|workshop|proc\.?/i.test(text)
         ? "conference"
         : "journal";
-      return { entry, text: text.toLowerCase(), year, type, index, isFirstAuthor };
+      return { entry, text: text.toLowerCase(), year, type, index };
     });
 
     const searchInput = document.querySelector("#pub-search");
     const typeSelect = document.querySelector("#pub-type");
     const yearFilter = document.querySelector("#pub-year-filter");
-    const sortSelect = document.querySelector("#pub-sort");
 
     const years = Array.from(
       new Set(entries.map((item) => item.year).filter((year) => year !== null))
@@ -426,8 +421,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const query = (searchInput?.value || "").trim().toLowerCase();
       const type = typeSelect?.value || "all";
       const yearValue = yearFilter?.value || "all";
-      const sortMode = sortSelect?.value || "default";
-
       let filtered = entries.filter((item) => {
         const matchesQuery = !query || item.text.includes(query);
         const matchesType = type === "all" || item.type === type;
@@ -435,13 +428,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return matchesQuery && matchesType && matchesYear;
       });
 
-      if (sortMode === "first-author") {
-        filtered.sort(
-          (a, b) => Number(b.isFirstAuthor) - Number(a.isFirstAuthor) || a.index - b.index
-        );
-      } else {
-        filtered.sort((a, b) => a.index - b.index);
-      }
+      filtered.sort((a, b) => a.index - b.index);
 
       refs.innerHTML = "";
       for (const item of filtered) {
@@ -452,7 +439,6 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput?.addEventListener("input", render);
     typeSelect?.addEventListener("change", render);
     yearFilter?.addEventListener("change", render);
-    sortSelect?.addEventListener("change", render);
     render();
   });
 });
@@ -462,50 +448,95 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </main> <!-- /main -->
 ﻿<script>
+
 document.addEventListener("DOMContentLoaded", () => {
+
   const path = window.location.pathname;
+
   const isZh = /\.zh\.html$/.test(path);
 
+
+
   const labelMap = {
+
     index: "主页",
+
     news: "新闻",
+
     research: "研究",
+
     publications: "论文",
+
     cv: "PI",
+
     hiring: "招募",
+
     team: "团队",
+
     fun: "Fun"
+
   };
 
+
+
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
   const enLink = Array.from(navLinks).find((el) => el.textContent.trim() === "EN");
+
   const zhLink = Array.from(navLinks).find((el) => el.textContent.trim() === "中文");
 
+
+
   navLinks.forEach((link) => {
+
     if (link === enLink || link === zhLink) return;
+
     const href = link.getAttribute("href");
+
     if (!href) return;
+
     const match = href.match(/([^/]+)\.html$/);
+
     if (!match) return;
+
     const base = match[1].replace(/\.zh$/, "");
+
     if (isZh) {
+
       link.setAttribute("href", href.replace(/\.html$/, ".zh.html"));
+
       if (labelMap[base]) {
+
         link.textContent = labelMap[base];
+
       }
+
     }
+
   });
 
+
+
   const current = path.split("/").pop() || "index.html";
+
   const base = current.replace(/\.zh\.html$/, ".html");
 
+
+
   if (enLink) {
+
     enLink.setAttribute("href", base);
+
   }
+
   if (zhLink) {
+
     zhLink.setAttribute("href", base.replace(/\.html$/, ".zh.html"));
+
   }
+
 });
+
 </script>
 
 <script id="quarto-html-after-body" type="application/javascript">

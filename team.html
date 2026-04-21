@@ -335,50 +335,95 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 ﻿<script>
+
 document.addEventListener("DOMContentLoaded", () => {
+
   const path = window.location.pathname;
+
   const isZh = /\.zh\.html$/.test(path);
 
+
+
   const labelMap = {
+
     index: "主页",
+
     news: "新闻",
+
     research: "研究",
+
     publications: "论文",
+
     cv: "PI",
+
     hiring: "招募",
+
     team: "团队",
+
     fun: "Fun"
+
   };
 
+
+
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
   const enLink = Array.from(navLinks).find((el) => el.textContent.trim() === "EN");
+
   const zhLink = Array.from(navLinks).find((el) => el.textContent.trim() === "中文");
 
+
+
   navLinks.forEach((link) => {
+
     if (link === enLink || link === zhLink) return;
+
     const href = link.getAttribute("href");
+
     if (!href) return;
+
     const match = href.match(/([^/]+)\.html$/);
+
     if (!match) return;
+
     const base = match[1].replace(/\.zh$/, "");
+
     if (isZh) {
+
       link.setAttribute("href", href.replace(/\.html$/, ".zh.html"));
+
       if (labelMap[base]) {
+
         link.textContent = labelMap[base];
+
       }
+
     }
+
   });
 
+
+
   const current = path.split("/").pop() || "index.html";
+
   const base = current.replace(/\.zh\.html$/, ".html");
 
+
+
   if (enLink) {
+
     enLink.setAttribute("href", base);
+
   }
+
   if (zhLink) {
+
     zhLink.setAttribute("href", base.replace(/\.html$/, ".zh.html"));
+
   }
+
 });
+
 </script>
 
 <script id="quarto-html-after-body" type="application/javascript">
