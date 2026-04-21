@@ -351,6 +351,15 @@ ul.task-list li input[type="checkbox"] {
 document.addEventListener("DOMContentLoaded", () => {
   const refLinks = document.querySelectorAll(".svg-ref[data-ref-id]");
   if (!refLinks.length) return;
+  const compactMedia = window.matchMedia("(max-width: 768px)");
+
+  function renderLabels() {
+    refLinks.forEach((link) => {
+      const num = link.dataset.refNum;
+      if (!num) return;
+      link.textContent = compactMedia.matches ? num : `[${num}]`;
+    });
+  }
 
   fetch("publications.html")
     .then((r) => r.text())
@@ -364,10 +373,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const id = link.getAttribute("data-ref-id");
         const num = indexMap.get(id);
         if (num) {
-          link.textContent = `[${num}]`;
+          link.dataset.refNum = String(num);
           link.setAttribute("aria-label", `Reference ${num}`);
         }
       });
+      renderLabels();
+      if (compactMedia.addEventListener) {
+        compactMedia.addEventListener("change", renderLabels);
+      } else {
+        compactMedia.addListener(renderLabels);
+      }
     })
     .catch(() => {
       // If fetch fails (e.g. local file without server), keep placeholder.

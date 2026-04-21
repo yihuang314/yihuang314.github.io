@@ -243,22 +243,29 @@ img {
   text-size-adjust: 100%;
 }
 
+.svg-overlay p {
+  margin: 0;
+}
+
+.svg-overlay p > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .svg-overlay .svg-ref {
   position: absolute;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.1em;
-  padding: 1px 3px;
+  display: inline-block;
+  padding: 0 1px;
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
-  font-size: clamp(8px, 1vw, 11px);
+  font-size: clamp(7px, 0.85vw, 11px);
   color: #549AD1;
   text-decoration: none;
-  background: rgba(229, 233, 240, 0.92);
-  border-radius: 3px;
-  line-height: 1.05;
+  background: rgba(229, 233, 240, 0.75);
+  border-radius: 2px;
+  line-height: 1;
   white-space: nowrap;
 }
 
@@ -341,10 +348,10 @@ img {
 
 @media (max-width: 768px) {
   .svg-overlay .svg-ref {
-    min-width: 1.9em;
-    padding: 1px 2px;
-    font-size: 8px;
-    border-radius: 2px;
+    padding: 0;
+    font-size: 6px;
+    border-radius: 1px;
     font-weight: 800;
+    background: rgba(229, 233, 240, 0.55);
   }
 }
