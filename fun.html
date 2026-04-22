@@ -338,14 +338,13 @@ ul.task-list li input[type="checkbox"] {
 document.addEventListener("DOMContentLoaded", () => {
 
   const path = window.location.pathname;
-
-  const isZh = /\.zh\.html$/.test(path);
-
+  const htmlLang = (document.documentElement.lang || "").toLowerCase();
+  const isZh = /\.zh(?:\.html)?(?:\/)?$/.test(path) || htmlLang.startsWith("zh");
 
 
   const labelMap = {
 
-    index: "主页",
+    index: "首页",
 
     news: "新闻",
 
@@ -353,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     publications: "论文",
 
-    cv: "PI",
+    cv: "项目负责人",
 
     hiring: "招募",
 
@@ -365,62 +364,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const mainNavLinks = document.querySelectorAll(".navbar-nav.me-auto .nav-link");
+  const langLinks = Array.from(document.querySelectorAll(".navbar-nav.ms-auto .nav-link"));
+  const enLink =
+    langLinks.find((el) => el.textContent.trim().toUpperCase() === "EN") ||
+    null;
+  const zhLink =
+    langLinks.find((el) => el.textContent.trim() === "中文") ||
+    langLinks.find((el) => /\.zh(?:\.html)?$/i.test(el.getAttribute("href") || "")) ||
+    null;
 
-  const enLink = Array.from(navLinks).find((el) => el.textContent.trim() === "EN");
+  function getBaseFromHref(href) {
+    try {
+      const url = new URL(href || "", window.location.href);
+      const pathname = (url.pathname || "").replace(/\/+$/, "");
+      if (!pathname || pathname === "/" || /\/index(?:\.zh)?\.html$/i.test(pathname)) {
+        return "index";
+      }
+      const match = pathname.match(/\/([^/]+)\.html$/i);
+      if (!match) return "";
+      return match[1].replace(/\.zh$/i, "");
+    } catch {
+      return "";
+    }
+  }
 
-  const zhLink = Array.from(navLinks).find((el) => el.textContent.trim() === "中文");
-
-
-
-  navLinks.forEach((link) => {
-
-    if (link === enLink || link === zhLink) return;
-
-    const href = link.getAttribute("href");
-
-    if (!href) return;
-
-    const match = href.match(/([^/]+)\.html$/);
-
-    if (!match) return;
-
-    const base = match[1].replace(/\.zh$/, "");
+  mainNavLinks.forEach((link) => {
+    const href = (link.getAttribute("href") || "").trim();
+    const base = getBaseFromHref(href);
+    if (!base) return;
 
     if (isZh) {
-
-      link.setAttribute("href", href.replace(/\.html$/, ".zh.html"));
-
-      if (labelMap[base]) {
-
-        link.textContent = labelMap[base];
-
+      if (base === "index") {
+        link.setAttribute("href", "index.zh.html");
+      } else if (/\.html$/i.test(href)) {
+        link.setAttribute("href", href.replace(/\.html$/i, ".zh.html"));
       }
-
+      if (labelMap[base]) {
+        link.textContent = labelMap[base];
+      }
     }
-
   });
 
 
-
-  const current = path.split("/").pop() || "index.html";
-
-  const base = current.replace(/\.zh\.html$/, ".html");
-
-
+  const current = path.split("/").filter(Boolean).pop() || "index.html";
+  const stem = current
+    .replace(/\.zh(?:\.html)?$/i, "")
+    .replace(/\.html$/i, "");
+  const enTarget = `${stem}.html`;
+  const zhTarget = `${stem}.zh.html`;
 
   if (enLink) {
-
-    enLink.setAttribute("href", base);
-
+    enLink.setAttribute("href", enTarget);
   }
-
   if (zhLink) {
-
-    zhLink.setAttribute("href", base.replace(/\.html$/, ".zh.html"));
-
+    zhLink.setAttribute("href", zhTarget);
   }
-
 });
 
 </script>
