@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -302,39 +302,81 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"><a href="./cv.html" class="name-link" style="color:#111; text-decoration:none;font-weight:700;">Yi Huang</a></h1></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 
 <div class="home-page">
-<div class="columns">
-<div class="column" style="width:35%;">
-<section id="yi-huang" class="level1">
-
+<div class="intro-block">
+<div class="intro-row">
+<div class="intro-left">
+<div class="intro-name">
+Yi Huang
+</div>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="yihuang_fig/yihuang_profile.jpeg" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="Profile photo of Yi Huang"></p>
+<p><img src="yihuang_fig/yihuang_profile.jpeg" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Profile photo of Yi Huang"></p>
 </figure>
 </div>
-</section>
-</div><div class="column" style="width:65%;">
+</div>
+<div class="intro-right">
 <p>Incoming Assistant Professor<br>
 <a href="https://eecs.utk.edu/">Min H. Kao Department of EECS</a><br>
 <a href="https://tickle.utk.edu/">Tickle College of Engineering</a><br>
 <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a></p>
 <ul>
 <li>Email: <a href="mailto:yihuang@utk.edu">yihuang@utk.edu</a></li>
-<li><a href="https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&amp;hl=en">Google Scholar</a> • <a href="hhttps://orcid.org/0000-0001-9628-1721">ORCID</a> • <a href="https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true">LinkedIn</a></li>
+<li><a href="https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&amp;hl=en">Google Scholar</a> • <a href="https://orcid.org/0000-0001-9628-1721">ORCID</a> • <a href="https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true">LinkedIn</a></li>
 </ul>
 </div>
 </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const row = document.querySelector(".intro-row");
+  const right = row?.querySelector(".intro-right");
+  const nameEl = row?.querySelector(".intro-left .intro-name");
+  const img = row?.querySelector(".intro-left img");
+  if (!row || !right || !nameEl || !img) return;
+
+  const mobileMedia = window.matchMedia("(max-width: 900px)");
+
+  function syncIntroPhotoHeight() {
+    if (mobileMedia.matches) {
+      right.style.marginTop = "0";
+      img.style.height = "auto";
+      return;
+    }
+
+    const nameStyles = window.getComputedStyle(nameEl);
+    const nameOffset =
+      nameEl.getBoundingClientRect().height +
+      parseFloat(nameStyles.marginBottom || "0");
+    right.style.marginTop = `${Math.max(0, Math.round(nameOffset))}px`;
+
+    img.style.height = "auto";
+    const targetHeight = right.getBoundingClientRect().height;
+    if (targetHeight > 0) {
+      img.style.height = `${Math.round(targetHeight)}px`;
+    }
+  }
+
+  syncIntroPhotoHeight();
+  window.addEventListener("resize", syncIntroPhotoHeight);
+  if (mobileMedia.addEventListener) {
+    mobileMedia.addEventListener("change", syncIntroPhotoHeight);
+  } else {
+    mobileMedia.addListener(syncIntroPhotoHeight);
+  }
+});
+</script>
 <section id="research-vision" class="level2">
 <h2 class="anchored" data-anchor-id="research-vision">Research Vision</h2>
 <section id="the-challenge-the-gap-between-ai-and-human-intelligence" class="level3">
