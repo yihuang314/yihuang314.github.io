@@ -276,6 +276,104 @@ ul, ol {
   margin-left: 1rem;
 }
 
+.home-page .h4-text-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0973B4;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.home-page .h4-text-title::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: currentColor;
+  line-height: 1;
+}
+
+.home-page .h4-text-title + p {
+  margin-top: 0;
+}
+
+.home-page .h4-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  border: 1px solid #7ea9c7;
+  border-radius: 10px;
+  background: transparent;
+  color: #4d6d82;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.home-page .h4-two-column {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 25%;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 0.8rem;
+}
+
+.home-page .h4-two-column > .column {
+  width: 100% !important;
+  margin: 0;
+}
+
+.home-page .h4-two-column > .column:last-child {
+  display: flex;
+}
+
+.home-page .h4-two-column > .column:last-child .h4-image-placeholder {
+  flex: 1 1 auto;
+}
+
+.home-page .h4-image-placeholder p,
+.home-page .h4-image-placeholder figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none !important;
+}
+
+.home-page .h4-image-placeholder img,
+.home-page .h4-image-placeholder p > img,
+.home-page .h4-image-placeholder figure img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.home-page .h4-two-column .column > :last-child {
+  margin-bottom: 0;
+}
+
+.home-page .h4-two-column:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .home-page .h4-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home-page h1 + *,
 .home-page h2 + *,
 .home-page h3 + *,
