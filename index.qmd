@@ -1,21 +1,66 @@
-::: {.home-page}
+---
+title-block: false
+---
 
-::::: columns
-::: {.column width="35%"}
-# [Yi Huang](cv.qmd){.name-link style="color:#111; text-decoration:none;font-weight:700;"}
-![](yihuang_fig/yihuang_profile.jpeg){fig-alt="Profile photo of Yi Huang" width="80%" fig-align="left"}
+::: {.home-page}
+::: {.intro-block}
+::: {.intro-row}
+::: {.intro-left}
+<div class="intro-name">Yi Huang</div>
+![](yihuang_fig/yihuang_profile.jpeg){fig-alt="Profile photo of Yi Huang" width="100%" fig-align="left"}
 :::
 
-::: {.column width="65%"}
+::: {.intro-right}
 Incoming Assistant Professor\
 [Min H. Kao Department of EECS](https://eecs.utk.edu/)\
 [Tickle College of Engineering](https://tickle.utk.edu/)\
 [University of Tennessee, Knoxville](https://www.utk.edu/)
 
 - Email: [yihuang\@utk.edu](mailto:yihuang@utk.edu)
-- [Google Scholar](https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&hl=en) • [ORCID](hhttps://orcid.org/0000-0001-9628-1721) • [LinkedIn](https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true)
+- [Google Scholar](https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&hl=en) &bull; [ORCID](https://orcid.org/0000-0001-9628-1721) &bull; [LinkedIn](https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true)
 :::
-:::::
+:::
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const row = document.querySelector(".intro-row");
+  const right = row?.querySelector(".intro-right");
+  const nameEl = row?.querySelector(".intro-left .intro-name");
+  const img = row?.querySelector(".intro-left img");
+  if (!row || !right || !nameEl || !img) return;
+
+  const mobileMedia = window.matchMedia("(max-width: 900px)");
+
+  function syncIntroPhotoHeight() {
+    if (mobileMedia.matches) {
+      right.style.marginTop = "0";
+      img.style.height = "auto";
+      return;
+    }
+
+    const nameStyles = window.getComputedStyle(nameEl);
+    const nameOffset =
+      nameEl.getBoundingClientRect().height +
+      parseFloat(nameStyles.marginBottom || "0");
+    right.style.marginTop = `${Math.max(0, Math.round(nameOffset))}px`;
+
+    img.style.height = "auto";
+    const targetHeight = right.getBoundingClientRect().height;
+    if (targetHeight > 0) {
+      img.style.height = `${Math.round(targetHeight)}px`;
+    }
+  }
+
+  syncIntroPhotoHeight();
+  window.addEventListener("resize", syncIntroPhotoHeight);
+  if (mobileMedia.addEventListener) {
+    mobileMedia.addEventListener("change", syncIntroPhotoHeight);
+  } else {
+    mobileMedia.addListener(syncIntroPhotoHeight);
+  }
+});
+</script>
 
 ## Research Vision
 
@@ -110,3 +155,5 @@ We co-design neural network structures and on-chip learning algorithms optimized
 We integrate these energy-efficient, low-latency systems into sensors, wearables, and mobile devices to address a wide range of edge applications that require instantaneous intelligent decisions with minimal power.
 
 :::
+
+

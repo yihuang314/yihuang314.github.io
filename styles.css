@@ -2,8 +2,39 @@ body {
   line-height: 1.6;
 }
 
+/* Keep the page centered and use about 90% of viewport width */
+#quarto-header .navbar-container,
+#quarto-content.quarto-container {
+  width: 88%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#quarto-content main.content {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #quarto-header .navbar-container,
+  #quarto-content.quarto-container {
+    width: 94%;
+  }
+}
+
 .navbar-brand {
   font-weight: 800;
+}
+
+.navbar-brand,
+.navbar-brand:link,
+.navbar-brand:visited,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: #111 !important;
 }
 
 h1, h2, h3, h4 {
@@ -29,6 +60,115 @@ ul, ol {
   margin-bottom: 0.3rem;
   margin-left: 0;
   color: #111;
+}
+
+/* Center the intro block (name + photo + basic info) as a unit */
+.home-page .intro-block {
+  width: min(900px, 100%);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.home-page .intro-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: clamp(1rem, 2vw, 1.6rem);
+  align-items: start;
+}
+
+.home-page .intro-name {
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+  font-weight: 750;
+  color: #111;
+  text-align: left;
+}
+
+.home-page .intro-name a,
+.home-page .intro-name a:link,
+.home-page .intro-name a:visited,
+.home-page .intro-name a:hover,
+.home-page .intro-name a:focus,
+.home-page .intro-name a:active {
+  color: #111 !important;
+  font-weight: 900 !important;
+  text-decoration: none;
+}
+
+.home-page .intro-left {
+  width: fit-content;
+  max-width: 100%;
+  justify-self: end;
+  display: block;
+}
+
+.home-page .intro-right {
+  width: 100%;
+  justify-self: start;
+  text-align: left;
+  align-self: start;
+}
+
+.home-page .intro-left img {
+  width: auto !important;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.home-page .intro-left .intro-name {
+  width: auto;
+  text-align: left;
+}
+
+.home-page .intro-left p {
+  margin: 0;
+  width: fit-content;
+  height: auto;
+  overflow: visible;
+}
+
+@media (max-width: 900px) {
+  .home-page .intro-block {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .home-page .intro-row {
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 1rem;
+    align-items: center;
+  }
+
+  .home-page .intro-left {
+    width: min(280px, 100%) !important;
+    justify-self: center;
+    display: block;
+  }
+
+  .home-page .intro-right {
+    justify-self: stretch;
+  }
+
+  .home-page .intro-left p {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-page .intro-left img {
+    width: 100% !important;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .home-page .intro-name {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+  }
 }
 
 .home-page h1 a {
