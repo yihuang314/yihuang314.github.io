@@ -276,6 +276,104 @@ ul, ol {
   margin-left: 1rem;
 }
 
+.home-page .h4-text-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0973B4;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.home-page .h4-text-title::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: currentColor;
+  line-height: 1;
+}
+
+.home-page .h4-text-title + p {
+  margin-top: 0;
+}
+
+.home-page .h4-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  border: 1px solid #7ea9c7;
+  border-radius: 10px;
+  background: transparent;
+  color: #4d6d82;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.home-page .h4-two-column {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 25%;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 0.8rem;
+}
+
+.home-page .h4-two-column > .column {
+  width: 100% !important;
+  margin: 0;
+}
+
+.home-page .h4-two-column > .column:last-child {
+  display: flex;
+}
+
+.home-page .h4-two-column > .column:last-child .h4-image-placeholder {
+  flex: 1 1 auto;
+}
+
+.home-page .h4-image-placeholder p,
+.home-page .h4-image-placeholder figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none !important;
+}
+
+.home-page .h4-image-placeholder img,
+.home-page .h4-image-placeholder p > img,
+.home-page .h4-image-placeholder figure img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.home-page .h4-two-column .column > :last-child {
+  margin-bottom: 0;
+}
+
+.home-page .h4-two-column:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .home-page .h4-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home-page h1 + *,
 .home-page h2 + *,
 .home-page h3 + *,
@@ -400,7 +498,7 @@ img {
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
-  font-size: clamp(7px, 0.85vw, 11px);
+  font-size: clamp(7px, 3vw, 11px);
   color: #549AD1;
   text-decoration: none;
   background: rgba(229, 233, 240, 0.75);
@@ -412,78 +510,78 @@ img {
 /* Ye2023 reference position */
 .svg-overlay .svg-ref-1 {
   left: 63%;
-  top: 92%;
+  top: 93%;
 }
 
 /* TODO: set positions for additional refs */
 .svg-overlay .svg-ref-2 {
   left: 60%;
-  top: 81%;
+  top: 82%;
 }
 
 .svg-overlay .svg-ref-3 {
   left: 63%;
-  top: 81%;
+  top: 82%;
 }
 
 .svg-overlay .svg-ref-4 {
   left: 66%;
-  top: 81%;
+  top: 82%;
 }
 
 .svg-overlay .svg-ref-5 {
   left: 57%;
-  top: 70.5%;
+  top: 71.5%;
 }
 
 .svg-overlay .svg-ref-6 {
   left: 59.5%;
-  top: 70.5%;
+  top: 71.5%;
 }
 
 .svg-overlay .svg-ref-7 {
   left: 62.5%;
-  top: 70.5%;
+  top: 71.5%;
 }
 
 .svg-overlay .svg-ref-8 {
   left: 54%;
-  top: 59.5%;
+  top: 60.5%;
 }
 
 .svg-overlay .svg-ref-9 {
   left: 56.5%;
-  top: 59.5%;
+  top: 60.5%;
 }
 
 .svg-overlay .svg-ref-10 {
   left: 59%;
-  top: 59.5%;
+  top: 60.5%;
 }
 
 .svg-overlay .svg-ref-11 {
   left: 52.5%;
-  top: 49%;
+  top: 50%;
 }
 
 .svg-overlay .svg-ref-12 {
   left: 55%;
-  top: 49%;
+  top: 50%;
 }
 
 .svg-overlay .svg-ref-13 {
   left: 26%;
-  top: 31.5%;
+  top: 32.5%;
 }
 
 .svg-overlay .svg-ref-14 {
   left: 28.5%;
-  top: 31.5%;
+  top: 32.5%;
 }
 
 .svg-overlay .svg-ref-15 {
   left: 31%;
-  top: 31.5%;
+  top: 32.5%;
 }
 
 @media (max-width: 768px) {

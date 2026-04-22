@@ -139,20 +139,65 @@ We pursue this vision through analog in-memory computing (AIMC) systems inspired
 
 Building on our prior work (see figure above), our approach centers on a cross-layer co-design framework that spans devices, circuits, architectures, algorithms, and applications:  
 
-#### Emerging memory devices 
+::: {.columns .h4-two-column}
+::: {.column}
+<div class="h4-text-title">Emerging memory devices</div>
 We model emerging memory devices, including non-volatile and volatile memristors, to establish the physical foundation for AIMC hardware that exploits their rich analog dynamics.
+:::
+::: {.column}
+::: {.h4-image-placeholder}
+![](work_fig/device_ye.svg){fig-alt="Device image"}
+:::
+:::
+:::
 
-#### Synapse and neuron circuits
+::: {.columns .h4-two-column}
+::: {.column}
+<div class="h4-text-title">Synapse and neuron circuits</div>
 We design analog and mixed-signal circuits that leverage these device-level dynamics to emulate the stochastic and temporal behavior of biological synapses and neurons.
+:::
+::: {.column}
+::: {.h4-image-placeholder}
+![](work_fig/synapse_htm_liu.svg){fig-alt="Circuit image"}
+:::
+:::
+:::
 
-#### Brain-inspired architectures
-We develop hierarchical, distributed architectures with efficient on-chip communication across analog and digital domains, enabling multilayer information processing and highly parallel computation. 
+::: {.columns .h4-two-column}
+::: {.column}
+<div class="h4-text-title">Brain-inspired architectures</div>
+We develop hierarchical, distributed architectures with efficient on-chip communication across analog and digital domains, enabling multilayer information processing and highly parallel computation.
+:::
+::: {.column}
+::: {.h4-image-placeholder}
+![](work_fig/architect_htm_lilu.svg){fig-alt="Architecture image"}
+:::
+:::
+:::
 
-#### Algorithm co-design
+::: {.columns .h4-two-column}
+::: {.column}
+<div class="h4-text-title">Algorithm co-design</div>
 We co-design neural network structures and on-chip learning algorithms optimized for brain-inspired hardware substrates, incorporating spike-based, event-driven, and analog features to enable real-time on-chip learning.
+:::
+::: {.column}
+::: {.h4-image-placeholder}
+![](work_fig/algorithm_hdc_huang.svg){fig-alt="Algorithm image"}
+:::
+:::
+:::
 
-#### Edge applications 
+::: {.columns .h4-two-column}
+::: {.column}
+<div class="h4-text-title">Edge applications</div>
 We integrate these energy-efficient, low-latency systems into sensors, wearables, and mobile devices to address a wide range of edge applications that require instantaneous intelligent decisions with minimal power.
+:::
+::: {.column}
+::: {.h4-image-placeholder}
+![](work_fig/application_huang.svg){fig-alt="Application image"}
+:::
+:::
+:::
 
 :::
 
