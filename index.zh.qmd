@@ -8,18 +8,23 @@ title-block: false
 ::: {.intro-block}
 ::: {.intro-row}
 ::: {.intro-left}
-<div class="intro-name">黄益</div>
 ![](yihuang_fig/yihuang_profile.jpeg){fig-alt="Yi Huang 个人照片" width="100%" fig-align="left"}
 :::
 
 ::: {.intro-right}
-即将入职助理教授\
+**即将入职助理教授**\
 [Min H. Kao 电气工程与计算机科学系](https://eecs.utk.edu/)\
 [Tickle 工程学院](https://tickle.utk.edu/)\
+[基础人工智能集群](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/)\
 [田纳西大学诺克斯维尔分校](https://www.utk.edu/)
+:::
 
-- 电子邮件: [yihuang@utk.edu](mailto:yihuang@utk.edu)
-- [Google Scholar](https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&hl=en) &bull; [ORCID](https://orcid.org/0000-0001-9628-1721) &bull; [LinkedIn](https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true)
+::: {.intro-extra}
+电子邮件: [yihuang\@utk.edu](mailto:yihuang@utk.edu)
+
+地址: 1520 Middle Drive, Knoxville, TN 37996-2250
+
+[Google Scholar](https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&hl=en) &bull; [ORCID](https://orcid.org/0000-0001-9628-1721) &bull; [LinkedIn](https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true)
 :::
 :::
 :::
@@ -27,28 +32,36 @@ title-block: false
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const row = document.querySelector(".intro-row");
-  const right = row?.querySelector(".intro-right");
-  const nameEl = row?.querySelector(".intro-left .intro-name");
+  const textCols = row
+    ? Array.from(row.querySelectorAll(".intro-right, .intro-extra"))
+    : [];
   const img = row?.querySelector(".intro-left img");
-  if (!row || !right || !nameEl || !img) return;
+  const nameEl = row?.querySelector(".intro-left .intro-name");
+  if (!row || !img || textCols.length === 0) return;
 
   const mobileMedia = window.matchMedia("(max-width: 900px)");
 
   function syncIntroPhotoHeight() {
     if (mobileMedia.matches) {
-      right.style.marginTop = "0";
+      textCols.forEach((col) => {
+        col.style.marginTop = "0";
+      });
       img.style.height = "auto";
       return;
     }
 
-    const nameStyles = window.getComputedStyle(nameEl);
-    const nameOffset =
-      nameEl.getBoundingClientRect().height +
-      parseFloat(nameStyles.marginBottom || "0");
-    right.style.marginTop = `${Math.max(0, Math.round(nameOffset))}px`;
+    const nameOffset = nameEl
+      ? nameEl.getBoundingClientRect().height +
+        parseFloat(window.getComputedStyle(nameEl).marginBottom || "0")
+      : 0;
+    textCols.forEach((col) => {
+      col.style.marginTop = `${Math.max(0, Math.round(nameOffset))}px`;
+    });
 
     img.style.height = "auto";
-    const targetHeight = right.getBoundingClientRect().height;
+    const targetHeight = textCols.reduce((maxHeight, col) => {
+      return Math.max(maxHeight, col.getBoundingClientRect().height);
+    }, 0);
     if (targetHeight > 0) {
       img.style.height = `${Math.round(targetHeight)}px`;
     }
@@ -149,64 +162,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 基于我们已有的工作（见上图），该方法以跨层协同设计框架为核心，覆盖器件、电路、架构、算法与应用等层级：
 
-::: {.columns .h4-two-column}
-::: {.column}
+::: {.h4-card-grid}
+
+::: {.h4-card}
 <div class="h4-text-title">新型存储器器件</div>
 我们建模各类新型存储器器件，包括非易失与易失忆阻器，为 AIMC 硬件奠定物理基础，并利用其丰富的模拟动态特性。
-:::
-::: {.column}
+
 ::: {.h4-image-placeholder}
-![](work_fig/device_ye.svg){fig-alt="器件图"}
-:::
+![](work_fig/device_huang.svg){fig-alt="器件图"}
 :::
 :::
 
-::: {.columns .h4-two-column}
-::: {.column}
+::: {.h4-card}
 <div class="h4-text-title">突触与神经元电路</div>
 我们设计模拟与混合信号电路，利用器件级动态特性来模拟生物突触与神经元的随机性与时序行为。
-:::
-::: {.column}
+
 ::: {.h4-image-placeholder}
 ![](work_fig/synapse_htm_liu.svg){fig-alt="电路图"}
 :::
 :::
-:::
 
-::: {.columns .h4-two-column}
-::: {.column}
+::: {.h4-card}
 <div class="h4-text-title">脑启发架构</div>
 我们开发层次化、分布式架构，实现模拟与数字域之间的高效片上通信，从而支持多层信息处理与高度并行计算。
-:::
-::: {.column}
+
 ::: {.h4-image-placeholder}
-![](work_fig/3d_archi_huang.jpg){fig-alt="架构图"}
-:::
+![](work_fig/architect_htm_liu.svg){fig-alt="架构图"}
 :::
 :::
 
-::: {.columns .h4-two-column}
-::: {.column}
+::: {.h4-card}
 <div class="h4-text-title">算法协同设计</div>
 我们协同设计神经网络结构与片上学习算法，以适配脑启发硬件基底，融入脉冲、事件驱动与模拟特性，实现实时片上学习。
-:::
-::: {.column}
+
 ::: {.h4-image-placeholder}
 ![](work_fig/algorithm_hdc_huang.svg){fig-alt="算法图"}
 :::
 :::
-:::
 
-::: {.columns .h4-two-column}
-::: {.column}
+::: {.h4-card}
 <div class="h4-text-title">边缘应用</div>
 我们将这些高能效、低时延系统集成到传感器、可穿戴与移动设备中，满足广泛边缘应用对即时智能决策与低功耗的需求。
-:::
-::: {.column}
+
 ::: {.h4-image-placeholder}
 ![](work_fig/application_huang.svg){fig-alt="应用图"}
 :::
 :::
+
+::: {.h4-card}
+<div class="h4-text-title">高能效 AI 系统</div>
+我们通过连接 AIMC 硬件、脑启发架构与算法，构建高能效智能 AI 系统，并利用软硬件协同设计支撑下一代 AI。
+
+::: {.h4-image-placeholder}
+![](work_fig/system_img.svg){fig-alt="系统图"}
+:::
+:::
+
 :::
 
 :::
