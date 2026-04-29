@@ -20,17 +20,17 @@ Our group emphasizes hands-on mentorship combined with the freedom to pursue amb
 
 #### Interdisciplinary and collaborative environment
 
-Our EECS department houses programs in Electrical Engineering, Computer Engineering, and Computer Science, creating collaboration opportunities across the full hardware-to-software stack. The department is also home to a leading research team ([TENN Lab](https://neuromorphic.eecs.utk.edu/)) in neuromorphic architectures, learning, and applications, a natural foundation for interdisciplinary work. In addition, proximity to [Oak Ridge National Laboratory](https://www.ornl.gov/) offers unique opportunities to collaborate with a world-class research facility.
+Our EECS department houses programs in Electrical Engineering, Computer Engineering, and Computer Science, creating collaboration opportunities across the full hardware-to-software stack. The department is also home to a leading research team ([TENN Lab](https://neuromorphic.eecs.utk.edu/)) in neuromorphic architectures, learning, and applications, a natural foundation for interdisciplinary work. In addition, proximity to [Oak Ridge National Laboratory](https://www.ornl.gov/) offers opportunities to collaborate with a world-class research facility.
 
 #### Life beyond the lab
 
-Research is a marathon, not a sprint, and we value a balanced approach. The Great Smoky Mountains National Park is right around the corner for our group hiking, camping, and outdoor adventures. Fitness and wellness are also part of our group culture, with guidance available from the PI, an ACE-certified personal trainer and nutrition specialist.
+Research is a marathon, not a sprint, and we value a balanced style. The Great Smoky Mountains National Park is right around the corner for our group hiking, camping, and outdoor adventures. Fitness and wellness are also part of our group culture, with guidance available from the PI, an ACE-certified personal trainer and nutrition specialist.
 
 ### Who We're Looking for:
 
 We are seeking self-motivated students who love exploring what's next. Ideal candidates have:
 
-- An interest in brain-inspired hardware and software for next-generation AI
+- An interest in brain-inspired circuits, architectures, and algorithems for next-generation AI
 - A strong background in analog circuit design or machine learning algorithms
 - Previous experience with neuromorphic computing or in-memory computing is a plus
 

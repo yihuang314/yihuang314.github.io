@@ -13,14 +13,14 @@ title-block: false
 **Incoming Assistant Professor**\
 [Min H. Kao Department of EECS](https://eecs.utk.edu/)\
 [Tickle College of Engineering](https://tickle.utk.edu/)\
-[Foundation AI Cluster](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/)\
+[Foundational AI Cluster](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/)\
 [University of Tennessee, Knoxville](https://www.utk.edu/)
 :::
 
 ::: {.intro-extra}
 Email: [yihuang\@utk.edu](mailto:yihuang@utk.edu)
 
-Address: 1520 Middle Drive, Knoxville, TN 37996-2250
+Address: Min H. Kao Building, 1520 Middle Drive, Knoxville, TN 37996
 
 [Google Scholar](https://scholar.google.com/citations?user=Y0JqxgwAAAAJ&hl=en) &bull; [ORCID](https://orcid.org/0000-0001-9628-1721) &bull; [LinkedIn](https://www.linkedin.com/in/yi-huang-b046a91aa/?skipRedirect=true)
 :::
@@ -82,7 +82,7 @@ Artificial intelligence (AI) has become a part of our everyday life, powering ev
 
 
 ### The Goal: Human-level Energy Efficiency and Cognitive Capability  
-Our research vision is to close this gap through a hardware-software co-design paradigm that spans multiple layers of Electrical Engineering and Computer Science (EECS) and draws inspiration from cognitive neuroscience. The ultimate goal is to approach the energy efficiency and cognitive capabilities of the human brain, enabling next-generation AI systems across a broad range of applications.
+Our research vision is to close this gap through a hardware-software co-design paradigm that spans multiple layers of Electrical Engineering and Computer Science (EECS) and draws inspiration from cognitive neuroscience. The ultimate goal is to approach the energy efficiency and cognitive capabilities of the human brain, enabling next-generation AI systems across a broad range of applications in our daily life.
 
 <div class="svg-responsive svg-overlay">
   <img src="work_fig/research_vision.svg" alt="research vision" />
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 ### The Approach: A Cross-layer Co-design Framework 
-We pursue this vision through analog in-memory computing (AIMC) systems inspired by the human brain and built upon emerging memory devices. This approach emulates the operating principles of biological neural systems: data is processed where it is stored, eliminating the separation between CPU and memory that characterizes conventional architectures, and computation operates directly on analog signals, without discrete digital data representations.
+We pursue this vision through analog in-memory computing (AIMC) systems inspired by the human brain and built upon emerging memory devices. This approach emulates the operating principles of biological neural systems: data is processed where it is stored and computation operates directly on analog signals.
 
 Building on our prior work (see figure above), our approach centers on a cross-layer co-design framework that spans devices, circuits, architectures, algorithms, and applications:  
 

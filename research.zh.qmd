@@ -28,6 +28,6 @@ lang: zh
 ::: {.image-box}
 <figure class="image-figure">
   <img src="work_fig/NREE_dir.svg" alt="Nature Reviews Electrical Engineering 综述文章">
-  <figcaption><a href="https://www.nature.com/articles/s44287-024-00037-6"> 忆阻器 AI 加速器 </a></figcaption>
+  <figcaption><a href="https://www.nature.com/articles/s44287-024-00037-6"> 基于忆阻器的 AI 硬件加速器 </a></figcaption>
 </figure>
 :::

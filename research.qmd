@@ -27,6 +27,6 @@ title: "Research Highlights"
 ::: {.image-box}
 <figure class="image-figure">
   <img src="work_fig/NREE_dir.svg" alt="Review paper on Nautre Reviews Electrical Engineering">
-  <figcaption><a href="https://www.nature.com/articles/s44287-024-00037-6"> Memristor-based AI accelerator </a></figcaption>
+  <figcaption><a href="https://www.nature.com/articles/s44287-024-00037-6"> Memristor-based hardware accelerators for AI </a></figcaption>
 </figure>
 :::
