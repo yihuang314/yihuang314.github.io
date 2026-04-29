@@ -43,7 +43,7 @@ format:
     page-layout: full
     theme:
       light: litera
-      dark: darkly
+      dark: cyborg
     css: styles.css
     toc: false
     link-external-newwindow: true

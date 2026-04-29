@@ -43,6 +43,15 @@ body {
   color: #111 !important;
 }
 
+body.quarto-dark .navbar-brand,
+body.quarto-dark .navbar-brand:link,
+body.quarto-dark .navbar-brand:visited,
+body.quarto-dark .navbar-brand:hover,
+body.quarto-dark .navbar-brand:focus,
+body.quarto-dark .navbar-brand:active {
+  color: #f3f7fb !important;
+}
+
 h1, h2, h3, h4 {
   margin-top: 1rem;
 }
@@ -371,6 +380,31 @@ ul, ol {
   background: #fff;
 }
 
+body.quarto-dark .home-page h3,
+body.quarto-dark .home-page h4,
+body.quarto-dark .home-page .h4-text-title {
+  color: #8ecaf0;
+}
+
+body.quarto-dark .home-page h2 {
+  border-bottom-color: #8ecaf0;
+}
+
+body.quarto-dark .home-page .h4-card {
+  border-color: #5f7f95;
+  background: #222831;
+  color: #f3f7fb;
+}
+
+body.quarto-dark .home-page .h4-card p {
+  color: inherit;
+}
+
+body.quarto-dark .home-page .h4-card .h4-image-placeholder {
+  background: #fff;
+  color: #1f2933;
+}
+
 .home-page .h4-two-column {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 25%;
@@ -465,6 +499,18 @@ img {
   font-size: 0.95rem;
 }
 
+body.quarto-dark .pub-controls input,
+body.quarto-dark .pub-controls select {
+  border-color: #5f7f95;
+  background-color: #222831;
+  color: #f3f7fb;
+}
+
+body.quarto-dark .pub-controls input::placeholder {
+  color: #b7c5d0;
+  opacity: 1;
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -522,6 +568,10 @@ img {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+body.quarto-dark .image-box figcaption {
+  color: #8ecaf0;
 }
 
 /* Responsive inline SVG container */
