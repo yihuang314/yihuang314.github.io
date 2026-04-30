@@ -11,7 +11,7 @@
     "href": "research.html",
     "title": "Research Highlights",
     "section": "",
-    "text": "Memristive system-on-a-chip (SoC) \n\n\n\n\n\n\n\n CMOS-based cellular neural network \n\n\n\n\n\n\n\n Neuromorphic sensing system\n\n\n\n\n\n\n\n Memristor-based hardware accelerators for AI"
+    "text": "Memristive SoC for signal processing\n\n\nNature Electronics (Cover article, July 2025)\n\n\n\n\n\n\n\n\n\nCMOS-based cellular neural network\n\n\nNature Electronics (Website banner and in Editoral)\n\n\n\n\n\n\n\n\n\nNeuromorphic sensing system\n\n\n Nature Sensors (Reported by News&Views)\n\n\n\n\n\n\n\n\n\nMemristor-based hardware accelerators for AI\n\n\nNature Reviews Electrical Engineering (Invited review)"
   },
   {
     "objectID": "publications.html",
@@ -186,6 +186,6 @@
     "href": "research.zh.html",
     "title": "研究亮点",
     "section": "",
-    "text": "忆阻器片上系统（SoC） \n\n\n\n\n\n\n\n CMOS 细胞神经网络 \n\n\n\n\n\n\n\n 类脑感知系统 \n\n\n\n\n\n\n\n 基于忆阻器的 AI 硬件加速器"
+    "text": "用于信号处理的忆阻器片上系统（SoC）\n\n\nNature Electronics（2025 年 7 月封面文章）\n\n\n\n\n\n\n\n\n\n基于 CMOS 的细胞神经网络\n\n\nNature Electronics（网站横幅及编辑推荐）\n\n\n\n\n\n\n\n\n\n类脑感知系统\n\n\nNature Sensors（News & Views 报道）\n\n\n\n\n\n\n\n\n\n基于忆阻器的 AI 硬件加速器\n\n\nNature Reviews Electrical Engineering（邀约综述）"
   }
 ]

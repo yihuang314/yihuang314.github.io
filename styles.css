@@ -554,13 +554,24 @@ body.quarto-dark .pub-controls input::placeholder {
   object-position: center;
   display: block;
   margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .image-box figcaption {
   text-align: center;
   font-size: 1rem;
-  color: #0973B4;
   margin-top: 0.2rem;
+}
+
+.image-box figcaption .caption-description {
+  color: #2f3a42;
+  font-weight: 900;
+}
+
+.image-box figcaption .caption-link {
+  color: #0973B4;
   font-weight: 900;
 }
 
@@ -570,7 +581,11 @@ body.quarto-dark .pub-controls input::placeholder {
   text-underline-offset: 2px;
 }
 
-body.quarto-dark .image-box figcaption {
+body.quarto-dark .image-box figcaption .caption-description {
+  color: #d7e1e8;
+}
+
+body.quarto-dark .image-box figcaption .caption-link {
   color: #8ecaf0;
 }
 
