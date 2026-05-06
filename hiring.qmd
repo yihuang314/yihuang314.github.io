@@ -24,18 +24,18 @@ Our EECS department houses programs in Electrical Engineering, Computer Engineer
 
 #### Life beyond the lab
 
-Research is a marathon, not a sprint, and we value a balanced style. The Great Smoky Mountains National Park is right around the corner for our group hiking, camping, and outdoor adventures. Fitness and wellness are also part of our group culture, with guidance available from the PI, an ACE-certified personal trainer and nutrition specialist.
+Research is a marathon, not a sprint, and we value a balanced style. Great Smoky Mountains National Park is right around the corner for our group hiking, camping, and outdoor adventures. Fitness and wellness are also part of our group culture, with guidance available from the PI, an ACE-certified personal trainer and nutrition specialist.
 
-### Who We're Looking for:
+### Who We're Looking For:
 
 We are seeking self-motivated students who love exploring what's next. Ideal candidates have:
 
-- An interest in brain-inspired circuits, architectures, and algorithems for next-generation AI
+- An interest in brain-inspired circuits, architectures, and algorithms for next-generation AI
 - A strong background in analog circuit design or machine learning algorithms
 - Previous experience with neuromorphic computing or in-memory computing is a plus
 
 ### How to Apply:
 
-Students interested in joining the team are encouraged to email yihuang@utk.edu with your: 1) CV, 2) transcripts, 3) a brief statement of your research interests and career goals, and 4) TOEFL or IELTS score (if applicable).
+Students interested in joining the team are encouraged to email yihuang@utk.edu with: 1) your CV, 2) your transcripts, 3) a brief statement of your research interests and career goals, and 4) your TOEFL or IELTS score (if applicable).
 
 :::

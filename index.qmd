@@ -78,11 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
 ## Research Vision
 
 ### The Challenge: The Gap Between AI and Human Intelligence
-Artificial intelligence (AI) has become a part of our everyday life, powering everything from voice assistants to medical diagnostics. But this progress comes at the cost of unsustainable scaling in data and energy consumption. A huge gap persists between AI and human intelligence, particularly in energy efficiency, where data centers behind AI consume as much electricity as small cities while the human brain operates on the energy of a single meal, and in cognitive capability, where AI requires massive datasets to learn tasks that humans can master from limited experience. 
+Artificial intelligence (AI) has become part of our everyday lives, powering everything from voice assistants to medical diagnostics. But this progress comes at the cost of unsustainable scaling in data and energy consumption. A huge gap persists between AI and human intelligence, particularly in energy efficiency, where data centers behind AI consume as much electricity as small cities while the human brain operates on the energy of a single meal, and in cognitive capability, where AI requires massive datasets to learn tasks that humans can master from limited experience.
 
 
 ### The Goal: Human-level Energy Efficiency and Cognitive Capability  
-Our research vision is to close this gap through a hardware-software co-design paradigm that spans multiple layers of Electrical Engineering and Computer Science (EECS) and draws inspiration from cognitive neuroscience. The ultimate goal is to approach the energy efficiency and cognitive capabilities of the human brain, enabling next-generation AI systems across a broad range of applications in our daily life.
+Our research vision is to close this gap through a hardware-software co-design paradigm that spans multiple layers of Electrical Engineering and Computer Science (EECS) and draws inspiration from cognitive neuroscience. The ultimate goal is to approach the energy efficiency and cognitive capabilities of the human brain, enabling next-generation AI systems across a broad range of applications in our daily lives.
 
 <div class="svg-responsive svg-overlay">
   <img src="work_fig/research_vision.svg" alt="research vision" />
@@ -201,7 +201,7 @@ We integrate these energy-efficient, low-latency systems into sensors, wearables
 
 ::: {.h4-card}
 <div class="h4-text-title">Energy-efficient AI systems</div>
-We build energy-efficient and intelligent AI systems by bridging AIMC hardware with brain-inspired architectures and algorithms, harnessing the hardware-software co-design for the next-generation AI.
+We build energy-efficient and intelligent AI systems by bridging AIMC hardware with brain-inspired architectures and algorithms, harnessing hardware-software co-design for next-generation AI.
 
 ::: {.h4-image-placeholder}
 ![](work_fig/system_img.svg){fig-alt="System image"}
