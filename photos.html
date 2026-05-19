@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Opportunities – Yi Huang</title>
+<title>photos – Yi Huang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -280,11 +280,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">PI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./hiring.html" aria-current="page"> 
+    <a class="nav-link" href="./hiring.html"> 
 <span class="menu-text">Opportunities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./photos.html"> 
+    <a class="nav-link active" href="./photos.html" aria-current="page"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
 </ul>
@@ -311,64 +311,111 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Opportunities</h1>
+
+
+
+<div class="photo-page">
+  <div class="photo-carousel" data-photo-carousel="">
+    <div class="photo-viewport">
+      <div class="photo-track">
+        <figure class="photo-card figure">
+          <img src="yihuang_fig/yi_alireza.jpg" alt="" class="figure-img">
+        </figure>
+
+        <figure class="photo-card figure">
+          <img src="yihuang_fig/probes.jpg" alt="" class="figure-img">
+        </figure>
+
+        <figure class="photo-card figure">
+          <img src="yihuang_fig/yi_working.jpg" alt="" class="figure-img">
+        </figure>
+
+        <figure class="photo-card figure">
+          <img src="yihuang_fig/wafer2.jpg" alt="" class="figure-img">
+        </figure>
+
+        <figure class="photo-card figure">
+          <img src="yihuang_fig/yi_alireza2.jpg" alt="" class="figure-img">
+        </figure>
+
+      </div>
+    </div>
+
+    <button class="photo-nav photo-nav-prev" type="button" aria-label="Previous photo">‹</button>
+    <button class="photo-nav photo-nav-next" type="button" aria-label="Next photo">›</button>
+
+    <div class="photo-dots" aria-label="Photo navigation"></div>
+  </div>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-photo-carousel]").forEach((carousel) => {
+    const viewport = carousel.querySelector(".photo-viewport");
+    const track = carousel.querySelector(".photo-track");
+    const slides = Array.from(carousel.querySelectorAll(".photo-card"));
+    const prev = carousel.querySelector(".photo-nav-prev");
+    const next = carousel.querySelector(".photo-nav-next");
+    const dotsWrap = carousel.querySelector(".photo-dots");
+    let index = 0;
+    let autoplayTimer = null;
 
+    if (!viewport || !track || slides.length === 0 || !dotsWrap) return;
 
-<div class="quarto-title-meta column-page">
+    const dots = slides.map((_, slideIndex) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "photo-dot";
+      dot.setAttribute("aria-label", `Show photo ${slideIndex + 1}`);
+      dot.addEventListener("click", () => goTo(slideIndex, true));
+      dotsWrap.appendChild(dot);
+      return dot;
+    });
 
-    
-  
-    
-  </div>
-  
+    function updateHeight() {
+      const activeImage = slides[index]?.querySelector("img");
+      if (!activeImage) return;
+      const applyHeight = () => {
+        viewport.style.height = `${activeImage.getBoundingClientRect().height}px`;
+      };
+      if (activeImage.complete) {
+        applyHeight();
+      } else {
+        activeImage.addEventListener("load", applyHeight, { once: true });
+      }
+    }
 
+    function goTo(nextIndex, manual = false) {
+      index = (nextIndex + slides.length) % slides.length;
+      const slide = slides[index];
+      const offset = slide.offsetLeft - (viewport.clientWidth - slide.clientWidth) / 2;
+      track.style.transform = `translateX(${-offset}px)`;
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("is-active", dotIndex === index);
+      });
+      updateHeight();
+      if (manual) scheduleAutoplay();
+    }
 
-</header>
+    function scheduleAutoplay() {
+      window.clearTimeout(autoplayTimer);
+      autoplayTimer = window.setTimeout(() => {
+        goTo(index + 1);
+        scheduleAutoplay();
+      }, 3000);
+    }
 
-
-<section id="prospective-phd-students" class="level2 home-page">
-<h2 class="anchored" data-anchor-id="prospective-phd-students">Prospective PhD Students</h2>
-<p>We are recruiting multiple PhD students to join our research group starting Fall 2026 or Spring 2027. Our work explores hardware-software co-design for energy-efficient, intelligent computing systems that will power next-generation AI, with a focus on two complementary directions:</p>
-<ul>
-<li>Brain-inspired circuits and architectures based on CMOS and emerging memory devices</li>
-<li>Energy-efficient algorithms and applications with analog in-memory computing hardware</li>
-</ul>
-<section id="why-join-our-team" class="level3">
-<h3 class="anchored" data-anchor-id="why-join-our-team">Why Join Our Team?</h3>
-<section id="collaborative-mentorship-and-research-development" class="level4">
-<h4 class="anchored" data-anchor-id="collaborative-mentorship-and-research-development">Collaborative mentorship and research development</h4>
-<p>Our group emphasizes hands-on mentorship combined with the freedom to pursue ambitious research directions. Team members benefit from collective experience spanning both hardware and software, with a track record of publishing in leading engineering venues (e.g., IEEE Transactions) as well as high-impact interdisciplinary journals (e.g., Nature series). Feel free to reach out to <a href="http://nano.ecs.umass.edu/?_ga=2.62088623.2061699384.1566844657-1135324780.1544805653">collaborators</a> to hear about their experience working with us.</p>
-</section>
-<section id="interdisciplinary-and-collaborative-environment" class="level4">
-<h4 class="anchored" data-anchor-id="interdisciplinary-and-collaborative-environment">Interdisciplinary and collaborative environment</h4>
-<p>Our EECS department houses programs in Electrical Engineering, Computer Engineering, and Computer Science, creating collaboration opportunities across the full hardware-to-software stack. The department is also home to a leading research team (<a href="https://neuromorphic.eecs.utk.edu/">TENN Lab</a>) in neuromorphic architectures, learning, and applications, a natural foundation for interdisciplinary work. In addition, proximity to <a href="https://www.ornl.gov/">Oak Ridge National Laboratory</a> offers opportunities to collaborate with a world-class research facility.</p>
-</section>
-<section id="life-beyond-the-lab" class="level4">
-<h4 class="anchored" data-anchor-id="life-beyond-the-lab">Life beyond the lab</h4>
-<p>Research is a marathon, not a sprint, and we value a balanced style. Great Smoky Mountains National Park is right around the corner for our group hiking, camping, and outdoor adventures. Fitness and wellness are also part of our group culture, with guidance available from the PI, an ACE-certified personal trainer and nutrition specialist.</p>
-</section>
-</section>
-<section id="who-were-looking-for" class="level3">
-<h3 class="anchored" data-anchor-id="who-were-looking-for">Who We’re Looking For:</h3>
-<p>We are seeking self-motivated students who love exploring what’s next. Ideal candidates have:</p>
-<ul>
-<li>An interest in brain-inspired circuits, architectures, and algorithms for next-generation AI</li>
-<li>A strong background in analog circuit design or machine learning algorithms</li>
-<li>Previous experience with neuromorphic computing or in-memory computing is a plus</li>
-</ul>
-</section>
-<section id="how-to-apply" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-apply">How to Apply:</h3>
-<p>Students interested in joining the team are encouraged to email yihuang@utk.edu with: 1) your CV, 2) your transcripts, 3) a brief statement of your research interests and career goals, and 4) your TOEFL or IELTS score (if applicable).</p>
-</section>
-</section>
+    prev?.addEventListener("click", () => goTo(index - 1, true));
+    next?.addEventListener("click", () => goTo(index + 1, true));
+    window.addEventListener("resize", () => goTo(index));
+    goTo(0);
+    scheduleAutoplay();
+  });
+});
+</script>
 
 
 

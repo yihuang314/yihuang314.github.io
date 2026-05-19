@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yihuang314.github.io/team.html</loc>
-    <lastmod>2026-04-21T20:06:27.602Z</lastmod>
+    <lastmod>2026-05-19T23:37:07.794Z</lastmod>
   </url>
   <url>
     <loc>https://yihuang314.github.io/research.html</loc>
@@ -13,12 +13,16 @@
     <lastmod>2026-05-06T00:16:36.177Z</lastmod>
   </url>
   <url>
+    <loc>https://yihuang314.github.io/photos.html</loc>
+    <lastmod>2026-05-19T23:54:52.357Z</lastmod>
+  </url>
+  <url>
     <loc>https://yihuang314.github.io/news.html</loc>
     <lastmod>2026-05-10T19:49:01.110Z</lastmod>
   </url>
   <url>
     <loc>https://yihuang314.github.io/index.html</loc>
-    <lastmod>2026-05-10T19:47:08.902Z</lastmod>
+    <lastmod>2026-05-19T22:56:56.838Z</lastmod>
   </url>
   <url>
     <loc>https://yihuang314.github.io/hiring.html</loc>
@@ -47,6 +51,10 @@
   <url>
     <loc>https://yihuang314.github.io/news.zh.html</loc>
     <lastmod>2026-05-10T19:49:22.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yihuang314.github.io/photos.zh.html</loc>
+    <lastmod>2026-05-19T23:54:29.684Z</lastmod>
   </url>
   <url>
     <loc>https://yihuang314.github.io/publications.zh.html</loc>
