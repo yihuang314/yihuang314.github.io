@@ -18,6 +18,7 @@ lang: zh
 
 ## 荣誉与奖励
 
+- Ting-wei Tang Dissertation Prize，2026
 - 麻省大学阿默斯特分校 ECE David H. Navon 奖学金，2022
 - 麻省大学阿默斯特分校 ECE Graduate Fellowship，2020
 

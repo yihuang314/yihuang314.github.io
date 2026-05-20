@@ -1,0 +1,105 @@
+---
+lang: zh
+---
+
+```{=html}
+<div class="photo-page">
+  <div class="photo-carousel" data-photo-carousel>
+    <div class="photo-viewport">
+      <div class="photo-track">
+        <figure class="photo-card">
+          <img src="yihuang_fig/yi_alireza.jpg" alt="">
+        </figure>
+
+        <figure class="photo-card">
+          <img src="yihuang_fig/probes.jpg" alt="">
+        </figure>
+
+        <figure class="photo-card">
+          <img src="yihuang_fig/yi_working.jpg" alt="">
+        </figure>
+
+        <figure class="photo-card">
+          <img src="yihuang_fig/wafer2.jpg" alt="">
+        </figure>
+
+        <figure class="photo-card">
+          <img src="yihuang_fig/yi_alireza2.jpg" alt="">
+        </figure>
+
+      </div>
+    </div>
+
+    <button class="photo-nav photo-nav-prev" type="button" aria-label="上一张照片">&lsaquo;</button>
+    <button class="photo-nav photo-nav-next" type="button" aria-label="下一张照片">&rsaquo;</button>
+
+    <div class="photo-dots" aria-label="照片导航"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-photo-carousel]").forEach((carousel) => {
+    const viewport = carousel.querySelector(".photo-viewport");
+    const track = carousel.querySelector(".photo-track");
+    const slides = Array.from(carousel.querySelectorAll(".photo-card"));
+    const prev = carousel.querySelector(".photo-nav-prev");
+    const next = carousel.querySelector(".photo-nav-next");
+    const dotsWrap = carousel.querySelector(".photo-dots");
+    let index = 0;
+    let autoplayTimer = null;
+
+    if (!viewport || !track || slides.length === 0 || !dotsWrap) return;
+
+    const dots = slides.map((_, slideIndex) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "photo-dot";
+      dot.setAttribute("aria-label", `显示第 ${slideIndex + 1} 张照片`);
+      dot.addEventListener("click", () => goTo(slideIndex, true));
+      dotsWrap.appendChild(dot);
+      return dot;
+    });
+
+    function updateHeight() {
+      const activeImage = slides[index]?.querySelector("img");
+      if (!activeImage) return;
+      const applyHeight = () => {
+        viewport.style.height = `${activeImage.getBoundingClientRect().height}px`;
+      };
+      if (activeImage.complete) {
+        applyHeight();
+      } else {
+        activeImage.addEventListener("load", applyHeight, { once: true });
+      }
+    }
+
+    function goTo(nextIndex, manual = false) {
+      index = (nextIndex + slides.length) % slides.length;
+      const slide = slides[index];
+      const offset = slide.offsetLeft - (viewport.clientWidth - slide.clientWidth) / 2;
+      track.style.transform = `translateX(${-offset}px)`;
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("is-active", dotIndex === index);
+      });
+      updateHeight();
+      if (manual) scheduleAutoplay();
+    }
+
+    function scheduleAutoplay() {
+      window.clearTimeout(autoplayTimer);
+      autoplayTimer = window.setTimeout(() => {
+        goTo(index + 1);
+        scheduleAutoplay();
+      }, 3000);
+    }
+
+    prev?.addEventListener("click", () => goTo(index - 1, true));
+    next?.addEventListener("click", () => goTo(index + 1, true));
+    window.addEventListener("resize", () => goTo(index));
+    goTo(0);
+    scheduleAutoplay();
+  });
+});
+</script>
+```

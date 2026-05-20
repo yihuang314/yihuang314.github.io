@@ -3,6 +3,8 @@ title: "新闻"
 lang: zh
 ---
 
+- **2026.05:** 我的博士论文“Hardware-Software Co-design of Memristive Systems for Edge Intelligence”获得 **2026 Ting-wei Tang Dissertation Prize**。
+
 - **2026.05:** 我们的合作论文“Electrochromic hyperspectral embedding for ultracompact intelligent vision”发表于 **_Nature Sensors_**。论文链接：[Li et al., _Nat. Sens._ 1 (2026)](https://www.nature.com/articles/s44460-026-00065-9)。相关 News & Views 文章见[链接](https://www.nature.com/articles/s44460-026-00066-8)。
 
 - **2026.01:** 我们的论文“Memristive cellular neural networks for fast in-pixel computing”发表于 **_Nature Electronics_**。论文链接：[Ravichandran et al., _Nat. Electron._ 9, 189–199 (2026)](https://www.nature.com/articles/s41928-025-01555-3)。相关报道：EurekAlert [链接](https://www.eurekalert.org/news-releases/1113506)、ScienMag [链接](https://scienmag.com/accelerating-in-pixel-computing-with-memristive-neural-networks/)、Research Briefing [链接](https://www.nature.com/articles/s41928-025-01559-z)。  
