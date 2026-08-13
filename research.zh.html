@@ -388,78 +388,151 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 ﻿<script>
+
 document.addEventListener("DOMContentLoaded", () => {
+
   const path = window.location.pathname;
+
   const htmlLang = (document.documentElement.lang || "").toLowerCase();
+
   const isZh = /\.zh(?:\.html)?(?:\/)?$/.test(path) || htmlLang.startsWith("zh");
 
+
+
   const labelMap = {
+
     index: "首页",
+
     news: "新闻",
+
     research: "研究",
+
     publications: "论文",
+
     cv: "项目负责人",
+
     hiring: "招募",
+
     team: "团队",
+
     fun: "Fun"
+
   };
 
+
+
   const mainNavLinks = document.querySelectorAll(".navbar-nav.me-auto .nav-link");
+
   const langLinks = Array.from(document.querySelectorAll(".navbar-nav.ms-auto .nav-link"));
+
   const enLink =
+
     langLinks.find((el) => el.textContent.trim().toUpperCase() === "EN") ||
+
     null;
+
   const zhLink =
+
     langLinks.find((el) => el.textContent.trim() === "中文") ||
+
     langLinks.find((el) => /\.zh(?:\.html)?$/i.test(el.getAttribute("href") || "")) ||
+
     null;
+
+
 
   function getBaseFromHref(href) {
+
     try {
+
       const url = new URL(href || "", window.location.href);
+
       const pathname = (url.pathname || "").replace(/\/+$/, "");
+
       if (!pathname || pathname === "/" || /\/index(?:\.zh)?\.html$/i.test(pathname)) {
+
         return "index";
+
       }
+
       const match = pathname.match(/\/([^/]+)\.html$/i);
+
       if (!match) return "";
+
       return match[1].replace(/\.zh$/i, "");
+
     } catch {
+
       return "";
+
     }
+
   }
+
+
 
   mainNavLinks.forEach((link) => {
+
     const href = (link.getAttribute("href") || "").trim();
+
     const base = getBaseFromHref(href);
+
     if (!base) return;
 
+
+
     if (isZh) {
+
       if (base === "index") {
+
         link.setAttribute("href", "index.zh.html");
+
       } else if (/\.html$/i.test(href)) {
+
         link.setAttribute("href", href.replace(/\.html$/i, ".zh.html"));
+
       }
+
       if (labelMap[base]) {
+
         link.textContent = labelMap[base];
+
       }
+
     }
+
   });
 
+
+
   const current = path.split("/").filter(Boolean).pop() || "index.html";
+
   const stem = current
+
     .replace(/\.zh(?:\.html)?$/i, "")
+
     .replace(/\.html$/i, "");
+
   const enTarget = `${stem}.html`;
+
   const zhTarget = `${stem}.zh.html`;
 
+
+
   if (enLink) {
+
     enLink.setAttribute("href", enTarget);
+
   }
+
   if (zhLink) {
+
     zhLink.setAttribute("href", zhTarget);
+
   }
+
 });
+
 </script>
 
 <script id="quarto-html-after-body" type="application/javascript">
