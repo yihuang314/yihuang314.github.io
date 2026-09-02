@@ -20,6 +20,9 @@ website:
   site-url: "https://yihuang314.github.io"
   description: "Academic homepage of Yi Huang"
   favicon: favicon.png
+  image: og-image.png
+  open-graph: true
+  twitter-card: true
   navbar:
     left:
       - href: index.qmd

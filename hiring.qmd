@@ -6,7 +6,7 @@ title: "Opportunities"
 
 ## Prospective PhD Students
 
-We are recruiting multiple PhD students to join our research group starting Fall 2026 or Spring 2027. Our work explores hardware-software co-design for energy-efficient, intelligent computing systems that will power next-generation AI, with a focus on two complementary directions:
+We are recruiting multiple PhD students to join our research group starting Spring 2027 or Fall 2027. Our work explores hardware-software co-design for energy-efficient, intelligent computing systems that will power next-generation AI, with a focus on two complementary directions:
 
 - Brain-inspired circuits and architectures based on CMOS and emerging memory devices
 - Energy-efficient algorithms and applications with analog in-memory computing hardware
@@ -16,7 +16,7 @@ We are recruiting multiple PhD students to join our research group starting Fall
 
 #### Collaborative mentorship and research development
 
-Our group emphasizes hands-on mentorship combined with the freedom to pursue ambitious research directions. Team members benefit from collective experience spanning both hardware and software, with a track record of publishing in leading engineering venues (e.g., IEEE Transactions) as well as high-impact interdisciplinary journals (e.g., Nature series). Feel free to reach out to [collaborators](http://nano.ecs.umass.edu/?_ga=2.62088623.2061699384.1566844657-1135324780.1544805653) to hear about their experience working with us.
+Our group emphasizes hands-on mentorship combined with the freedom to pursue ambitious research directions. Team members benefit from collective experience spanning both hardware and software, with a track record of publishing in leading engineering venues (e.g., IEEE Transactions) as well as high-impact interdisciplinary journals (e.g., Nature series).
 
 #### Interdisciplinary and collaborative environment
 
