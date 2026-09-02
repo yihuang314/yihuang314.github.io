@@ -1,6 +1,17 @@
 ﻿project:
   render:
-    - '*.qmd'
+    - index.qmd
+    - index.zh.qmd
+    - news.qmd
+    - news.zh.qmd
+    - research.qmd
+    - research.zh.qmd
+    - publications.qmd
+    - publications.zh.qmd
+    - cv.qmd
+    - cv.zh.qmd
+    - hiring.qmd
+    - hiring.zh.qmd
   type: website
   output-dir: _site
 
@@ -8,7 +19,7 @@ website:
   title: "Yi Huang"
   site-url: "https://yihuang314.github.io"
   description: "Academic homepage of Yi Huang"
-  favicon: work_fig/NE_cover_2025.png
+  favicon: favicon.png
   navbar:
     left:
       - href: index.qmd
@@ -32,7 +43,7 @@ website:
         text: 中文
 
   page-footer:
-    center: "2026 @ Yi Huang"
+    center: "&copy; Yi Huang"
 
 lang: en
 
