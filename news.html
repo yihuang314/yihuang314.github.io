@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,14 +43,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d70271683aa93feafeb583e606870e3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-6f157ed924bc3ef39b17ae587b4cc858.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d70271683aa93feafeb583e606870e3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0f39785e2fd2f38803d35a3bedda0481.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-57e11f932f0725bb86b73412e6f71886.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0f39785e2fd2f38803d35a3bedda0481.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -344,153 +347,79 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 ﻿<script>
-
 document.addEventListener("DOMContentLoaded", () => {
-
   const path = window.location.pathname;
-
   const htmlLang = (document.documentElement.lang || "").toLowerCase();
-
   const isZh = /\.zh(?:\.html)?(?:\/)?$/.test(path) || htmlLang.startsWith("zh");
 
-
-
   const labelMap = {
-
     index: "首页",
-
     news: "新闻",
-
     research: "研究",
-
     publications: "论文",
-
     cv: "项目负责人",
-
     hiring: "招募",
-
     team: "团队",
-
     fun: "Fun"
-
   };
 
-
-
   const mainNavLinks = document.querySelectorAll(".navbar-nav.me-auto .nav-link");
-
   const langLinks = Array.from(document.querySelectorAll(".navbar-nav.ms-auto .nav-link"));
-
   const enLink =
-
     langLinks.find((el) => el.textContent.trim().toUpperCase() === "EN") ||
-
     null;
-
   const zhLink =
-
     langLinks.find((el) => el.textContent.trim() === "中文") ||
-
     langLinks.find((el) => /\.zh(?:\.html)?$/i.test(el.getAttribute("href") || "")) ||
-
     null;
-
-
 
   function getBaseFromHref(href) {
-
     try {
-
       const url = new URL(href || "", window.location.href);
-
       const pathname = (url.pathname || "").replace(/\/+$/, "");
-
       if (!pathname || pathname === "/" || /\/index(?:\.zh)?\.html$/i.test(pathname)) {
-
         return "index";
-
       }
-
       const match = pathname.match(/\/([^/]+)\.html$/i);
-
       if (!match) return "";
-
       return match[1].replace(/\.zh$/i, "");
-
     } catch {
-
       return "";
-
     }
-
   }
-
-
 
   mainNavLinks.forEach((link) => {
-
     const href = (link.getAttribute("href") || "").trim();
-
     const base = getBaseFromHref(href);
-
     if (!base) return;
 
-
-
     if (isZh) {
-
       if (base === "index") {
-
         link.setAttribute("href", "index.zh.html");
-
       } else if (/\.html$/i.test(href)) {
-
         link.setAttribute("href", href.replace(/\.html$/i, ".zh.html"));
-
       }
-
       if (labelMap[base]) {
-
         link.textContent = labelMap[base];
-
       }
-
     }
-
   });
 
-
-
   const current = path.split("/").filter(Boolean).pop() || "index.html";
-
   const stem = current
-
     .replace(/\.zh(?:\.html)?$/i, "")
-
     .replace(/\.html$/i, "");
-
   const enTarget = `${stem}.html`;
-
   const zhTarget = `${stem}.zh.html`;
 
-
-
   if (enLink) {
-
     enLink.setAttribute("href", enTarget);
-
   }
-
   if (zhLink) {
-
     zhLink.setAttribute("href", zhTarget);
-
   }
-
 });
-
 </script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
