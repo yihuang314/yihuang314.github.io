@@ -2,9 +2,11 @@
 title: "News"
 ---
 
+- **2026.09:** Our paper "Analog neural network–based wireless receiver" is published in **_Science Advances_**. Link to the paper: [He et al., _Sci. Adv._ 12, eaeg7153 (2026)](https://www.science.org/doi/10.1126/sciadv.aeg7153). 
+
 - **2026.08:** Our paper "Single-step analog in-memory matrix computation in three-dimensional circuits" is published in **_Advanced Intelligent Systems_**. Link to the paper: [Rad et al., _Adv. Intell. Syst._ (2026)](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.70500). 
 
-- **2026.07:** Our paper "Hyperdimensional in-memory computing with analogue memristive crossbar arrays" is published in **_Nature Communications_**. Link to the paper: [Huang et al., _Nat. Commun._ (2026)](https://www.nature.com/articles/s41467-026-76067-5). 
+- **2026.07:** Our paper "Hyperdimensional in-memory computing with analogue memristive crossbar arrays" is published in **_Nature Communications_**. Link to the paper: [Huang et al., _Nat. Commun._ (2026)](https://www.nature.com/articles/s41467-026-76067-5). The work was covered by [UMass Amherst News](https://www.umass.edu/news/article/umass-amherst-engineers-make-edge-ai-more-efficient-redesigning-both-algorithm-and), [EurekAlert](https://www.eurekalert.org/news-releases/1140274), [Tech Xplore](https://techxplore.com/news/2026-08-edge-ai-efficient-redesigning-algorithm.html), [Semiconductor Engineering](https://semiengineering.com/research-bits-aug-18/), and [Mirage News](https://www.miragenews.com/umass-amherst-revamps-edge-ai-for-greater-1728388/), and internationally by [Enerzine](https://www.enerzine.com/des-ingenieurs-rendent-lia-embarquee-plus-efficace-en-repensant-lalgorithme-et-le-materiel/193481-2026-09) (French), [KO.com.ua](https://ko.com.ua/odnochasne_pereroblennya_algoritmu_ta_aparatnogo_zabezpechennya_zrobilo_periferijnij_ai_efektivnishim_154327) (Ukrainian), and [TIIS](https://tiisys.com/blog/2026/08/18/post-200876/) (Japanese). I also discussed the work in a [commentary](https://www.wamc.org/commentary-opinion/2026-08-27/commentary-when-ai-moves-to-the-edge) for WAMC Northeast Public Radio.
 
 - **2026.05:** My dissertation "Hardware-Software Co-design of Memristive Systems for Edge Intelligence" received the **2026 Ting-wei Tang Dissertation Prize**. 
 

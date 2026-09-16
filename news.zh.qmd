@@ -3,9 +3,11 @@ title: "新闻"
 lang: zh
 ---
 
+- **2026.09:** 我们的论文“Analog neural network–based wireless receiver”发表于 **_Science Advances_**。论文链接：[He et al., _Sci. Adv._ 12, eaeg7153 (2026)](https://www.science.org/doi/10.1126/sciadv.aeg7153)。
+
 - **2026.08:** 我们的论文“Single-step analog in-memory matrix computation in three-dimensional circuits”发表于 **_Advanced Intelligent Systems_**。论文链接：[Rad et al., _Adv. Intell. Syst._ (2026)](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.70500)。
 
-- **2026.07:** 我们的论文“Hyperdimensional in-memory computing with analogue memristive crossbar arrays”发表于 **_Nature Communications_**。论文链接：[Huang et al., _Nat. Commun._ (2026)](https://www.nature.com/articles/s41467-026-76067-5)。
+- **2026.07:** 我们的论文“Hyperdimensional in-memory computing with analogue memristive crossbar arrays”发表于 **_Nature Communications_**。论文链接：[Huang et al., _Nat. Commun._ (2026)](https://www.nature.com/articles/s41467-026-76067-5)。相关报道：[UMass Amherst News](https://www.umass.edu/news/article/umass-amherst-engineers-make-edge-ai-more-efficient-redesigning-both-algorithm-and)、[EurekAlert](https://www.eurekalert.org/news-releases/1140274)、[Tech Xplore](https://techxplore.com/news/2026-08-edge-ai-efficient-redesigning-algorithm.html)、[Semiconductor Engineering](https://semiengineering.com/research-bits-aug-18/)、[Mirage News](https://www.miragenews.com/umass-amherst-revamps-edge-ai-for-greater-1728388/)，以及 [Enerzine](https://www.enerzine.com/des-ingenieurs-rendent-lia-embarquee-plus-efficace-en-repensant-lalgorithme-et-le-materiel/193481-2026-09)（法语）、[KO.com.ua](https://ko.com.ua/odnochasne_pereroblennya_algoritmu_ta_aparatnogo_zabezpechennya_zrobilo_periferijnij_ai_efektivnishim_154327)（乌克兰语）、[TIIS](https://tiisys.com/blog/2026/08/18/post-200876/)（日语）。我也为 WAMC Northeast Public Radio 撰写了一篇相关[评论](https://www.wamc.org/commentary-opinion/2026-08-27/commentary-when-ai-moves-to-the-edge)。
 
 - **2026.05:** 我的博士论文“Hardware-Software Co-design of Memristive Systems for Edge Intelligence”获得 **2026 Ting-wei Tang Dissertation Prize**。
 
