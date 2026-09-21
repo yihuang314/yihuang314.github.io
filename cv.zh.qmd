@@ -22,6 +22,12 @@ lang: zh
 - 麻省大学阿默斯特分校 ECE David H. Navon 奖学金，2022
 - 麻省大学阿默斯特分校 ECE Graduate Fellowship，2020
 
+## 教学与指导
+
+- ECE 455/555 Embedded Systems（嵌入式系统），田纳西大学诺克斯维尔分校，2026 年秋
+- REU 本科生科研指导，麻省大学阿默斯特分校，2022/2023 年夏（项目：FPGA 编程）
+- 本科毕业设计指导，密苏里科技大学（远程），2018 年秋（项目：基于非易失存储器的机器学习）
+
 ## 期刊/会议审稿
 - _Science Advances_
 - _Nature Communications_

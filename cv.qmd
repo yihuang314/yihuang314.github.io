@@ -22,6 +22,12 @@ I am an Assistant Professor in the [Min H. Kao Department of EECS](https://eecs.
 - ECE David H. Navon Scholarship, University of Massachusetts Amherst, 2022
 - ECE Graduate Fellowship, University of Massachusetts Amherst, 2020
 
+## Teaching and Advising
+
+- ECE 455/555 Embedded Systems, University of Tennessee, Knoxville, Fall 2026
+- Mentor for REU students, University of Massachusetts Amherst, Summer 2022/2023 (Project: FPGA programming)
+- Mentor for Senior Design Project, Missouri University of Science and Technology (Remote), Fall 2018 (Project: ML with non-volatile memory)
+
 ## Journal/Conference Reviewer
 - _Science Advances_ 
 - _Nature Communications_
