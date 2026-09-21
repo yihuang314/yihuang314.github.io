@@ -570,6 +570,126 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.querySelector(".svg-overlay");
+  if (!overlay) return;                     // 其他页面直接跳过
+
+  /* ──────────────────────────────────────────────────────────────
+     ① 金字塔上每条横线的位置，只在这里定义一次。
+        top  = 横线的垂直位置（占图片高度的百分比）
+        left = 该行第一个编号的起点（占图片宽度的百分比）
+        编号之间的横向间距由脚本按实际渲染宽度自动计算，
+        所以一行里加到第四个、第五个都不需要调这里。
+     ────────────────────────────────────────────────────────────── */
+  const ROWS = {
+    system:       { top: 32.5, left: 26.0 },  // Efficient and intelligent AI system
+    edge:         { top: 50.0, left: 52.5 },  // Edge applications
+    algorithm:    { top: 60.5, left: 54.5 },  // Algorithm co-designs
+    architecture: { top: 71.5, left: 57.0 },  // Brain-inspired architectures
+    circuits:     { top: 82.0, left: 60.0 },  // Synapse and neuron circuits
+    devices:      { top: 93.0, left: 63.0 },  // Emerging memory devices
+  };
+
+  /* ──────────────────────────────────────────────────────────────
+     ② 以后发了新论文，只需要在这里加一行。
+        key = references.bib 里的 citation key（大小写要一致）
+        row = 上面 ROWS 里的名字
+        · 同一篇想同时挂在两条线上，写两行即可。
+        · 行内的左右顺序会按文献编号自动升序排，不用管这里的先后。
+        · key 写错或论文还没进 bib，该行会被跳过并在控制台给出提示。
+     ────────────────────────────────────────────────────────────── */
+  const REFS = [
+    { key: "He2026",            row: "edge"         },
+    { key: "Rad2026",           row: "architecture" },
+    { key: "Huang2026",         row: "algorithm"    },
+    { key: "Li2026",            row: "devices"      },
+    { key: "Ravichandran2026",  row: "edge"         },
+    { key: "Zhao2026",          row: "edge"         },
+    { key: "Huang2025",         row: "edge"         },
+    { key: "Jiang2025",         row: "algorithm"    },
+    { key: "huang2024hardware", row: "algorithm"    },
+    { key: "Huang2024",         row: "system"       },
+    { key: "Nowshin2024",       row: "architecture" },
+    { key: "Huang2023_APL",     row: "system"       },
+    { key: "Huang2023_Nano",    row: "system"       },
+    { key: "Ye2023",            row: "devices"      },
+    { key: "Liu2022",           row: "architecture" },
+    { key: "Yang2020",          row: "circuits"     },
+    { key: "Shi2018a",          row: "circuits"     },
+    { key: "Yang2018b",         row: "circuits"     },
+    { key: "Huang2018a",        row: "architecture" },
+  ];
+
+  /* ─────────────────────── 以下一般不需要改 ─────────────────────── */
+
+  const compact = window.matchMedia("(max-width: 768px)");
+  const items = [];
+
+  // 编号来自 publications 页的渲染顺序，所以 bib 一改，这里自动跟着变。
+  fetch("publications.html")
+    .then((r) => r.text())
+    .then((html) => {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      const entries = Array.from(doc.querySelectorAll("#refs .csl-entry"));
+      if (!entries.length) return;
+      const numberOf = new Map(entries.map((el, i) => [el.id, i + 1]));
+
+      for (const { key, row } of REFS) {
+        const id = "ref-" + key;
+        const num = numberOf.get(id);
+        if (!num) {
+          console.warn(`[refs-overlay] 论文页里找不到 "${key}"，该条已跳过`);
+          continue;
+        }
+        if (!ROWS[row]) {
+          console.warn(`[refs-overlay] "${key}" 指定的类别 "${row}" 未定义，该条已跳过`);
+          continue;
+        }
+        const a = document.createElement("a");
+        a.className = "svg-ref";
+        a.href = `publications.html#${id}`;
+        a.setAttribute("aria-label", `Reference ${num}`);
+        overlay.appendChild(a);
+        items.push({ a, row, num });
+      }
+
+      items.sort((p, q) => p.num - q.num);   // 行内按编号升序
+      render();
+      window.addEventListener("resize", render);
+      if (compact.addEventListener) compact.addEventListener("change", render);
+      else compact.addListener(render);
+    })
+    .catch(() => { /* 拿不到编号就不画，保持图面干净 */ });
+
+  function render() {
+    if (!items.length) return;
+    const W = overlay.clientWidth;
+    if (!W) return;
+
+    for (const it of items) {
+      it.a.textContent = compact.matches ? String(it.num) : `[${it.num}]`;
+    }
+
+    const byRow = new Map();                 // items 已按编号排序，分组后行内即升序
+    for (const it of items) {
+      if (!byRow.has(it.row)) byRow.set(it.row, []);
+      byRow.get(it.row).push(it);
+    }
+
+    for (const [row, list] of byRow) {
+      const { top, left } = ROWS[row];
+      let x = (left / 100) * W;
+      for (const it of list) {
+        const gap = parseFloat(getComputedStyle(it.a).fontSize) * 0.8;
+        it.a.style.top = top + "%";
+        it.a.style.left = (x / W) * 100 + "%";
+        x += it.a.offsetWidth + gap;
+      }
+    }
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
