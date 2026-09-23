@@ -335,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="intro-right">
-<p><strong>Assistant Professor</strong><br>
+<p><a href="https://eecs.utk.edu/people/yi-huang/"><strong>Assistant Professor</strong></a><br>
 <a href="https://eecs.utk.edu/">Min H. Kao Department of EECS</a><br>
 <a href="https://tickle.utk.edu/">Tickle College of Engineering</a><br>
 <a href="https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/">Foundational AI Cluster</a><br>
@@ -364,6 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileMedia.matches) {
       textCols.forEach((col) => {
         col.style.marginTop = "0";
+        col.style.minHeight = "";
       });
       img.style.height = "auto";
       return;
@@ -378,11 +379,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     img.style.height = "auto";
+    textCols.forEach((col) => {
+      col.style.minHeight = "";
+    });
     const targetHeight = textCols.reduce((maxHeight, col) => {
       return Math.max(maxHeight, col.getBoundingClientRect().height);
     }, 0);
     if (targetHeight > 0) {
       img.style.height = `${Math.round(targetHeight)}px`;
+      textCols.forEach((col) => {
+        col.style.minHeight = `${Math.round(targetHeight)}px`;
+      });
     }
   }
 
