@@ -8,11 +8,11 @@ title-block: false
 ::: {.intro-block}
 ::: {.intro-row}
 ::: {.intro-left}
-![](yihuang_fig/yihuang_profile.jpeg){fig-alt="Yi Huang 个人照片" width="100%" fig-align="left"}
+![](yihuang_fig/yihuang_profile.jpg){fig-alt="Yi Huang 个人照片" width="100%" fig-align="left"}
 :::
 
 ::: {.intro-right}
-**助理教授**\
+[**助理教授**](https://eecs.utk.edu/people/yi-huang/)\
 [Min H. Kao 电气工程与计算机科学系](https://eecs.utk.edu/)\
 [Tickle 工程学院](https://tickle.utk.edu/)\
 [基础人工智能集群](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/)\
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileMedia.matches) {
       textCols.forEach((col) => {
         col.style.marginTop = "0";
+        col.style.minHeight = "";
       });
       img.style.height = "auto";
       return;
@@ -59,11 +60,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     img.style.height = "auto";
+    textCols.forEach((col) => {
+      col.style.minHeight = "";
+    });
     const targetHeight = textCols.reduce((maxHeight, col) => {
       return Math.max(maxHeight, col.getBoundingClientRect().height);
     }, 0);
     if (targetHeight > 0) {
       img.style.height = `${Math.round(targetHeight)}px`;
+      textCols.forEach((col) => {
+        col.style.minHeight = `${Math.round(targetHeight)}px`;
+      });
     }
   }
 

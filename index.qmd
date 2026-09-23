@@ -10,7 +10,7 @@ title-block: false
 :::
 
 ::: {.intro-right}
-**Assistant Professor**\
+[**Assistant Professor**](https://eecs.utk.edu/people/yi-huang/)\
 [Min H. Kao Department of EECS](https://eecs.utk.edu/)\
 [Tickle College of Engineering](https://tickle.utk.edu/)\
 [Foundational AI Cluster](https://research.utk.edu/cluster-hire/foundational-artificial-intelligence/)\
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileMedia.matches) {
       textCols.forEach((col) => {
         col.style.marginTop = "0";
+        col.style.minHeight = "";
       });
       img.style.height = "auto";
       return;
@@ -57,11 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     img.style.height = "auto";
+    textCols.forEach((col) => {
+      col.style.minHeight = "";
+    });
     const targetHeight = textCols.reduce((maxHeight, col) => {
       return Math.max(maxHeight, col.getBoundingClientRect().height);
     }, 0);
     if (targetHeight > 0) {
       img.style.height = `${Math.round(targetHeight)}px`;
+      textCols.forEach((col) => {
+        col.style.minHeight = `${Math.round(targetHeight)}px`;
+      });
     }
   }
 

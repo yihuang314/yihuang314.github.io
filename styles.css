@@ -824,3 +824,35 @@ body.quarto-dark .photo-dot.is-active {
     background: rgba(229, 233, 240, 0.55);
   }
 }
+
+/* Equal-height intro text columns: the script sets both columns to the
+   same min-height; lines/items in each column are spread evenly to fill
+   it, so tops and bottoms line up with the photo. */
+.home-page .intro-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .intro-right > p {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.home-page .intro-right > p > br {
+  display: none;
+}
+
+.home-page .intro-extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 0.5rem;
+}
+
+.home-page .intro-extra > p {
+  margin: 0;
+}
