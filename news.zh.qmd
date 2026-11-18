@@ -3,6 +3,8 @@ title: "新闻"
 lang: zh
 ---
 
+- **2026.11:** 我们合作的综述论文“Memristors”发表于 **_Nature Reviews Methods Primers_**。论文链接：[Xu et al., _Nat. Rev. Methods Primers_ 6, 87 (2026)](https://www.nature.com/articles/s43586-026-00538-8)。
+
 - **2026.09:** 我们的论文“Analog neural network–based wireless receiver”发表于 **_Science Advances_**。论文链接：[He et al., _Sci. Adv._ 12, eaeg7153 (2026)](https://www.science.org/doi/10.1126/sciadv.aeg7153)。
 
 - **2026.08:** 我们的论文“Single-step analog in-memory matrix computation in three-dimensional circuits”发表于 **_Advanced Intelligent Systems_**。论文链接：[Rad et al., _Adv. Intell. Syst._ (2026)](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.70500)。

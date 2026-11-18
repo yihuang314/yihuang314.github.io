@@ -2,6 +2,8 @@
 title: "News"
 ---
 
+- **2026.11:** Our collaborative review paper "Memristors" is published in **_Nature Reviews Methods Primers_**. Link to the paper: [Xu et al., _Nat. Rev. Methods Primers_ 6, 87 (2026)](https://www.nature.com/articles/s43586-026-00538-8). 
+
 - **2026.09:** Our paper "Analog neural network–based wireless receiver" is published in **_Science Advances_**. Link to the paper: [He et al., _Sci. Adv._ 12, eaeg7153 (2026)](https://www.science.org/doi/10.1126/sciadv.aeg7153). 
 
 - **2026.08:** Our paper "Single-step analog in-memory matrix computation in three-dimensional circuits" is published in **_Advanced Intelligent Systems_**. Link to the paper: [Rad et al., _Adv. Intell. Syst._ (2026)](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.70500). 
